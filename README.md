@@ -4,8 +4,8 @@ clone naver width SCSS
 
 ## PC:
 - [ ] Header
-  - [ ] Ad
-  - [ ] Search
+  - [x] Ad
+  - [x] Search
   - [ ] Navibar
 - [ ] Ad & News
 - [ ] potal
@@ -30,7 +30,7 @@ sb= small bold
 ## 1. Header 
 - [x] Ad
  - logo | content & downloadBtn | deleteBtn
-- [ ] search
- - logo | input 
+- [x] search
+ - logo | search | 네이버를 시작페이지로, 주니어네이버, 헤피빈
 - [ ] navibar
  - 8(green) | 9(black) | more(btn) | filter(btn)

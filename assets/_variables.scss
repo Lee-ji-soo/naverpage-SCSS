@@ -13,10 +13,11 @@ button:active:target:focus {
     background-color: none;
 }
 
+
 $white:#fff;
 $whole:100%;
 $basicH:48px;
-$basicM:60px;
+$basicM:50px;
 $naverGreen1:#19ce60;
 $naverGreen2:#01cbae;
 $naverGreenX:#fff1c0;
@@ -30,6 +31,16 @@ $smallBtnRadius:0.2rem;
     &-tl {
         font-size: 12px;
         font-weight: 100;
+    }
+
+    &-tm {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &-tb {
+        font-size: 12px;
+        font-weight: 700;
     }
 
     &-sl {
