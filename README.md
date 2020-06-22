@@ -21,9 +21,16 @@ $whole: 100%
 
 .fs= fontsize
 tl= tiny light
+tm= tiny medium
+tb= tiny bold
 sl= small light
 sm= small medium
 sb= small bold
+ml= medium light
+mm= medium medium
+mb= medium bold
+lb= large bold
+
 
 
 
