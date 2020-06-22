@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+button:active:target:focus {
+    border: none;
+    background-color: none;
+}
+
+$white:#fff;
+$whole:100%;
+$basicH:48px;
+$basicM:60px;
+$naverGreen1:#19ce60;
+$naverGreen2:#01cbae;
+$naverGreenX:#fff1c0;
+
+
+$smallBtnPadding:5px;
+$smallBtnRadius:0.2rem;
+
+
+.fs {
+    &-tl {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    &-sl {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    &-sm {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    &-sb {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &-ml {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    &-mm {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &-mb {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &-lb {
+        font-size: 22px;
+        font-weight: 700;
+    }
+}

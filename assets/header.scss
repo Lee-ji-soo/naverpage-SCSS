@@ -1,0 +1,32 @@
+@import 'assets/variables';
+
+#header__advertisement {
+    height: $basicH;
+
+
+    background-color: $naverGreen2;
+    color: $white;
+
+    padding: 0 $basicM;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#ad__content {
+    text-align: center;
+}
+
+#ad__downloadBtn {
+    padding: $smallBtnPadding;
+    background-color: $naverGreenX;
+    border-radius: $smallBtnRadius;
+    color: $naverGreen2
+}
+
+#ad__deleteBtn {
+    color: $white;
+}

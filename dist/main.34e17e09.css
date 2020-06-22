@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+button:active:target:focus {
+  border: none;
+  background-color: none;
+}
+
+.fs-tl {
+  font-size: 12px;
+  font-weight: 100;
+}
+.fs-sl {
+  font-size: 14px;
+  font-weight: 100;
+}
+.fs-sm {
+  font-size: 14px;
+  font-weight: 400;
+}
+.fs-sb {
+  font-size: 14px;
+  font-weight: 700;
+}
+.fs-ml {
+  font-size: 16px;
+  font-weight: 100;
+}
+.fs-mm {
+  font-size: 16px;
+  font-weight: 300;
+}
+.fs-mb {
+  font-size: 16px;
+  font-weight: 700;
+}
+.fs-lb {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+#header__advertisement {
+  height: 48px;
+  background-color: #01cbae;
+  color: #fff;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#ad__content {
+  text-align: center;
+}
+
+#ad__downloadBtn {
+  padding: 5px;
+  background-color: #fff1c0;
+  border-radius: 0.2rem;
+  color: #01cbae;
+}
+
+#ad__deleteBtn {
+  color: #fff;
+}
+
+/*# sourceMappingURL=/main.34e17e09.css.map */
