@@ -559,7 +559,7 @@ button:active:target:focus {
   display: grid;
   position: relative;
   align-content: center;
-  grid-template-columns: 20% 55% 22%;
+  grid-template-columns: 20% 54% 22%;
 }
 
 #header__mid .logo {
@@ -567,16 +567,17 @@ button:active:target:focus {
   height: 55px;
   font-size: 40px;
   color: #19ce60;
+  align-self: center;
 }
 
 #header__mid .search input {
   width: 530px;
-  height: 49px;
-  border: 3px solid #19ce60;
+  height: 51px;
+  border: 2px solid #19ce60;
 }
 
 input[type=text] {
-  font-size: 24px;
+  font-size: 22px;
   color: #19ce60;
   text-align: center;
 }
@@ -588,7 +589,6 @@ input[type=text] {
   color: #fff;
   font-size: 22px;
   margin-left: -4px;
-  padding-top: 2px;
 }
 
 #header__mid .etc {
@@ -602,7 +602,6 @@ input[type=text] {
 #header__mid .page {
   color: #333;
 }
-
 #header__mid .page:hover {
   border-bottom: 1px solid #333;
 }

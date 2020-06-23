@@ -41,3 +41,7 @@ lb= large bold
  - logo | search | 네이버를 시작페이지로, 주니어네이버, 헤피빈
 - [ ] navibar
  - 8(green) | 9(black) | more(btn) | filter(btn)
+
+
+## tip 
+:hover :active 등의 경우 css속성을 자식 스코프에서 &로 설정할 수 있음

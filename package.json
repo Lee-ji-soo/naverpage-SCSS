@@ -1,24 +1,24 @@
 {
-  "name": "grid-with-SCSS",
-  "version": "1.0.0",
-  "description": "clone naver width SCSS",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lee-ji-soo/grid.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Lee-ji-soo/grid/issues"
-  },
-  "homepage": "https://github.com/Lee-ji-soo/grid#readme",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.8"
-  }
+    "name": "grid",
+    "version": "1.0.0",
+    "description": "clone naver width SCSS",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Lee-ji-soo/grid.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Lee-ji-soo/grid/issues"
+    },
+    "homepage": "https://github.com/Lee-ji-soo/grid#readme",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.26.8"
+    }
 }

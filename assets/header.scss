@@ -1,5 +1,8 @@
 @import 'assets/variables';
 
+$headerMidContentHeight:55px;
+$searchBorder:2px;
+
 #header__ad--bg {
     width: 100%;
     height: $basicH;
@@ -51,17 +54,16 @@
     display: grid;
     position: relative;
     align-content: center;
-    grid-template-columns: 20% 55% 22%;
+    grid-template-columns: 20% 54% 22%;
 }
 
-$headerMidContentHeight:55px;
-$searchBorder:3px;
 
 #header__mid .logo {
     width: 230px;
     height: $headerMidContentHeight;
     font-size: 40px;
     color: $naverGreen1;
+    align-self: center;
 }
 
 #header__mid .search input {
@@ -71,7 +73,7 @@ $searchBorder:3px;
 }
 
 input[type="text"] {
-    font-size: 24px;
+    font-size: 22px;
     color: $naverGreen1;
     text-align: center;
 
@@ -84,7 +86,6 @@ input[type="text"] {
     color: $white;
     font-size: 22px;
     margin-left: -4px;
-    padding-top: 2px;
 }
 
 #header__mid .etc {
@@ -97,16 +98,23 @@ input[type="text"] {
 
 #header__mid .page {
     color: #333;
+
+    &:hover {
+        border-bottom: 1px solid #333;
+    }
 }
 
-#header__mid .page:hover {
-    border-bottom: 1px solid #333;
+#header__mid .junior {
+
+    &:hover {
+        color: hotpink;
+    }
 }
 
-#header__mid .junior:hover {
-    color: hotpink;
-}
+#header__mid .happybean {
 
-#header__mid .happybean:hover {
-    color: $naverGreen2;
+
+    &:hover {
+        color: $naverGreen2;
+    }
 }
