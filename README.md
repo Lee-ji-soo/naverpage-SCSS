@@ -3,10 +3,10 @@ clone naver width SCSS
 
 
 ## PC:
-- [ ] Header
+- [x] Header
   - [x] Ad
   - [x] Search
-  - [ ] Navibar
+  - [x] Navibar
 - [ ] Ad & News
 - [ ] potal
 - [ ] login
@@ -15,7 +15,13 @@ clone naver width SCSS
 
 ## SCSS rule
 $basicH : navgation bar, 검색창, 로그인 버튼, 등등의 높이 설정
-$basicM: 페이지 양옆 여백;
+$basicW : 화면에서 보여질 전체 너비 
+$basicWnM : 화면에서 보여질 전체 너비를 설정하고, 그 마진값
+$basicBorder: 기본 테두리;
+
+$LeftWidth: 화면 왼쪽 내용들 ;
+$MiddleWidth: 화면 왼쪽, 오른쪽 사이의 틈;
+$RightWidth:화면 오른쪽 내용들;
 
 $whole: 100%
 
@@ -39,8 +45,8 @@ lb= large bold
  - logo | content & downloadBtn | deleteBtn
 - [x] search
  - logo | search | 네이버를 시작페이지로, 주니어네이버, 헤피빈
-- [ ] navibar
- - 8(green) | 9(black) | more(btn) | filter(btn)
+- [x] navibar
+ - 7(green) | 9(black) | more(btn) | filter(btn)
 
 
 ## tip 

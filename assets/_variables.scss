@@ -15,17 +15,24 @@ button:active:target:focus {
 
 
 $white:#fff;
-$whole:100%;
-$basicH:48px;
-$basicM:50px;
 $naverGreen1:#19ce60;
 $naverGreen2:#01cbae;
 $naverGreenX:#fff1c0;
 
+$whole:100%;
+
+$basicH:48px;
+$basicW:1130px;
+$basicM: 0 auto;
+
+$LeftWidth:756px;
+$MiddleWidth:35px;
+$RightWidth:350px;
+
+$basicBorder:1px solid #dbdbdb;
 
 $smallBtnPadding:5px;
 $smallBtnRadius:0.2rem;
-
 
 .fs {
     &-tl {
@@ -59,17 +66,17 @@ $smallBtnRadius:0.2rem;
     }
 
     &-ml {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 100;
     }
 
     &-mm {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 300;
     }
 
     &-mb {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
     }
 
