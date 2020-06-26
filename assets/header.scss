@@ -22,100 +22,98 @@ $searchBorder:2px;
     align-items: center;
     justify-content: space-between;
 
-}
+    content {
+        text-align: center;
+    }
 
-#header__advertisement .content {
-    text-align: center;
-}
+    .downloadBtn {
+        padding: $smallBtnPadding;
+        background-color: $naverGreenX;
+        border-radius: $smallBtnRadius;
+        color: $naverGreen2
+    }
 
+    .deleteBtn {
+        color: $white;
+    }
 
-#header__advertisement .downloadBtn {
-    padding: $smallBtnPadding;
-    background-color: $naverGreenX;
-    border-radius: $smallBtnRadius;
-    color: $naverGreen2
-}
-
-
-#header__advertisement .deleteBtn {
-    color: $white;
 }
 
 #header__mid {
     width: $basicW;
     margin: $basicM;
-}
 
-#header__mid .container {
-    width: 100%;
-    height: 160px;
-    display: grid;
-    position: relative;
-    align-content: center;
-    grid-template-columns: 20% 54% 22%;
-}
+    .container {
+        width: 100%;
+        height: 160px;
+        display: grid;
+        position: relative;
+        align-content: center;
+        grid-template-columns: 20% 54% 22%;
+    }
+
+    .logo {
+        width: 230px;
+        height: $headerMidContentHeight;
+        font-size: 40px;
+        color: $naverGreen1;
+        align-self: center;
+    }
+
+    .search input {
+        width: 530px;
+        height: ($headerMidContentHeight)-($searchBorder*2);
+        border: $searchBorder solid $naverGreen1;
+    }
+
+    input[type="text"] {
+        font-size: 22px;
+        color: $naverGreen1;
+        text-align: center;
+
+    }
+
+    .search .submit {
+        width: $headerMidContentHeight;
+        height: $headerMidContentHeight;
+        background-color: $naverGreen1;
+        color: $white;
+        font-size: 22px;
+        margin-left: -4px;
+    }
+
+    .etc {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #999;
+        cursor: pointer;
+    }
+
+    .page {
+        color: #333;
+
+        &:hover {
+            border-bottom: 1px solid #333;
+        }
+    }
+
+    .junior {
+
+        &:hover {
+            color: hotpink;
+        }
+    }
+
+    .happybean {
 
 
-#header__mid .logo {
-    width: 230px;
-    height: $headerMidContentHeight;
-    font-size: 40px;
-    color: $naverGreen1;
-    align-self: center;
-}
-
-#header__mid .search input {
-    width: 530px;
-    height: ($headerMidContentHeight)-($searchBorder*2);
-    border: $searchBorder solid $naverGreen1;
-}
-
-input[type="text"] {
-    font-size: 22px;
-    color: $naverGreen1;
-    text-align: center;
-
-}
-
-#header__mid .search .submit {
-    width: $headerMidContentHeight;
-    height: $headerMidContentHeight;
-    background-color: $naverGreen1;
-    color: $white;
-    font-size: 22px;
-    margin-left: -4px;
-}
-
-#header__mid .etc {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #999;
-    cursor: pointer;
-}
-
-#header__mid .page {
-    color: #333;
-
-    &:hover {
-        border-bottom: 1px solid #333;
+        &:hover {
+            color: $naverGreen2;
+        }
     }
 }
 
-#header__mid .junior {
-
-    &:hover {
-        color: hotpink;
-    }
-}
-
-#header__mid .happybean {
-
-
-    &:hover {
-        color: $naverGreen2;
-    }
-}
 
 #header__gnb--bg {
     width: $whole;
@@ -131,33 +129,32 @@ input[type="text"] {
     height: $basicH;
     display: flex;
     align-items: center;
-}
 
-#header__gnb .leftbox {
-    width: $LeftWidth;
-    display: flex;
-    justify-content: space-around;
-    margin-right: $MiddleWidth;
-}
+    .leftbox {
+        width: $leftWidth;
+        display: flex;
+        justify-content: space-around;
+        margin-right: $middleWidth;
+    }
 
+    .UL {
+        width: ($leftWidth)/2;
+        height: 15px;
+        display: flex;
+        justify-content: space-around;
+    }
 
-#header__gnb .UL {
-    width: ($LeftWidth)/2;
-    height: 15px;
-    display: flex;
-    justify-content: space-around;
-}
+    .greenUL {
+        color: $naverGreen1;
+    }
 
-#header__gnb .greenUL {
-    color: $naverGreen1;
-}
+    .rightbox {
+        width: $rightWidth;
+        display: flex;
+        justify-content: space-between;
+    }
 
-#header__gnb .rightbox {
-    width: $RightWidth;
-    display: flex;
-    justify-content: space-between;
-}
-
-#header__gnb .down {
-    color: #666;
+    .down {
+        color: #666;
+    }
 }

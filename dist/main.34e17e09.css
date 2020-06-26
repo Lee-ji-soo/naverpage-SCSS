@@ -530,18 +530,15 @@ button:active:target:focus {
   align-items: center;
   justify-content: space-between;
 }
-
-#header__advertisement .content {
+#header__advertisement content {
   text-align: center;
 }
-
 #header__advertisement .downloadBtn {
   padding: 5px;
   background-color: #fff1c0;
   border-radius: 0.2rem;
   color: #01cbae;
 }
-
 #header__advertisement .deleteBtn {
   color: #fff;
 }
@@ -550,7 +547,6 @@ button:active:target:focus {
   width: 1130px;
   margin: 0 auto;
 }
-
 #header__mid .container {
   width: 100%;
   height: 160px;
@@ -559,7 +555,6 @@ button:active:target:focus {
   align-content: center;
   grid-template-columns: 20% 54% 22%;
 }
-
 #header__mid .logo {
   width: 230px;
   height: 55px;
@@ -567,19 +562,16 @@ button:active:target:focus {
   color: #19ce60;
   align-self: center;
 }
-
 #header__mid .search input {
   width: 530px;
   height: 51px;
   border: 2px solid #19ce60;
 }
-
-input[type=text] {
+#header__mid input[type=text] {
   font-size: 22px;
   color: #19ce60;
   text-align: center;
 }
-
 #header__mid .search .submit {
   width: 55px;
   height: 55px;
@@ -588,7 +580,6 @@ input[type=text] {
   font-size: 22px;
   margin-left: -4px;
 }
-
 #header__mid .etc {
   position: absolute;
   top: 20px;
@@ -596,18 +587,15 @@ input[type=text] {
   color: #999;
   cursor: pointer;
 }
-
 #header__mid .page {
   color: #333;
 }
 #header__mid .page:hover {
   border-bottom: 1px solid #333;
 }
-
 #header__mid .junior:hover {
   color: hotpink;
 }
-
 #header__mid .happybean:hover {
   color: #01cbae;
 }
@@ -627,33 +615,43 @@ input[type=text] {
   display: flex;
   align-items: center;
 }
-
 #header__gnb .leftbox {
   width: 756px;
   display: flex;
   justify-content: space-around;
   margin-right: 35px;
 }
-
 #header__gnb .UL {
   width: 378px;
   height: 15px;
   display: flex;
   justify-content: space-around;
 }
-
 #header__gnb .greenUL {
   color: #19ce60;
 }
-
 #header__gnb .rightbox {
   width: 350px;
   display: flex;
   justify-content: space-between;
 }
-
 #header__gnb .down {
   color: #666;
+}
+
+#container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+#container-left {
+  width: 756px;
+}
+#container-left #left__ad {
+  width: 100%;
+  height: 135px;
+  background-color: #dbdbdb;
+  margin-top: 20px;
 }
 
 #wrap {

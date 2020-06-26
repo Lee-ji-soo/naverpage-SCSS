@@ -8,9 +8,9 @@ $basicW : 화면에서 보여질 전체 너비
 $basicWnM : 화면에서 보여질 전체 너비를 설정하고, 그 마진값
 $basicBorder: 기본 테두리;
 
-$LeftWidth: 화면 왼쪽 내용들 ;
-$MiddleWidth: 화면 왼쪽, 오른쪽 사이의 틈;
-$RightWidth:화면 오른쪽 내용들;
+$leftWidth: 화면 왼쪽 내용들 ;
+$middleWidth: 화면 왼쪽, 오른쪽 사이의 틈;
+$rightWidth:화면 오른쪽 내용들;
 
 $whole: 100%
 

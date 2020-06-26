@@ -1,0 +1,18 @@
+#container {
+    width: $basicW;
+    margin: $basicM;
+}
+
+
+#container-left {
+    width: $leftWidth;
+
+    $containerAdLoginHeight: 135px;
+
+    #left__ad {
+        width: $whole;
+        height: $containerAdLoginHeight;
+        background-color: #dbdbdb;
+        margin-top: $containerEachMarginTop+5;
+    }
+}

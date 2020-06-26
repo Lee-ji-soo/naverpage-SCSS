@@ -25,14 +25,19 @@ $basicH:48px;
 $basicW:1130px;
 $basicM: 0 auto;
 
-$LeftWidth:756px;
-$MiddleWidth:35px;
-$RightWidth:350px;
+$leftWidth:756px;
+$middleWidth:35px;
+$rightWidth:350px;
+
+$containerEachMarginTop:15px;
 
 $basicBorder:1px solid #dbdbdb;
 
 $smallBtnPadding:5px;
 $smallBtnRadius:0.2rem;
+
+
+
 
 .fs {
     &-tl {
