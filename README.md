@@ -50,7 +50,12 @@ lb= large bold
   - [ ] news stand 
        - title | category 
   - [ ] theme
-       - title | category | main article | sub article (article-text & article-video x 2 )
+       - title
+       - category
+       - main article
+         - main article big | main article small
+       - sub article
+           - sub article-text | sub article-video x 2
   - [ ] morebutton
 
 #### Right side
