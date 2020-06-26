@@ -1,18 +1,97 @@
 #container {
+    $containerAdLoginHeight: 135px;
+    $containerSpeednewsCurrencyHeight: 50px;
+    $containerEachMarginTop: 15px;
+
+    $boxMargin: 0 20px;
+    $textMargin: 0 7px;
+
     width: $basicW;
     margin: $basicM;
-}
 
+    #container-left {
+        width: $leftWidth;
 
-#container-left {
-    width: $leftWidth;
+        #left__ad {
+            width: $whole;
+            height: $containerAdLoginHeight;
+            background-color: #dbdbdb;
+            margin-top: $containerEachMarginTop+5;
+        }
 
-    $containerAdLoginHeight: 135px;
+        #left__speednews {
 
-    #left__ad {
-        width: $whole;
-        height: $containerAdLoginHeight;
-        background-color: #dbdbdb;
-        margin-top: $containerEachMarginTop+5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: $containerSpeednewsCurrencyHeight;
+            margin-top: $containerEachMarginTop;
+            background-color:
+                $basicBoxBackgroundcolor;
+            border: $basicBorder;
+
+            .speed {
+                margin: $boxMargin;
+
+            }
+
+            .category {
+                display: flex;
+                margin: $boxMargin;
+
+                .list {
+                    margin: $textMargin;
+                }
+
+                .naver {
+                    color: $naverBlueDeep;
+                }
+            }
+        }
+
+        #left__newsstand {
+            position: relative;
+
+            #newsstand__title {
+                height: $basicH;
+                margin-top: $containerEachMarginTop;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .title {
+                    display: flex;
+
+                    span {
+                        margin: 2px;
+                        ;
+                    }
+
+                    .company-category {
+                        margin-left: 5px;
+
+                        .active {
+                            font-weight: 700;
+                            color: $fontDark;
+                        }
+                    }
+
+                }
+
+                .setting {
+                    display: flex;
+                    color: $fontSuperLight;
+
+                    li {
+                        margin: $textMargin;
+
+                    }
+
+                    .active {
+                        color: $naverBlueDeep;
+                    }
+                }
+            }
+        }
     }
 }

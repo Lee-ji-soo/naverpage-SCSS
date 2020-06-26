@@ -18,6 +18,11 @@ $white:#fff;
 $naverGreen1:#19ce60;
 $naverGreen2:#01cbae;
 $naverGreenX:#fff1c0;
+$naverBlueLight:#4a94e1;
+$naverBlueDeep:#4C70CC;
+$fontSuperLight:#B1B2B1;
+$fontLight:#555;
+$fontDark:#222;
 
 $whole:100%;
 
@@ -29,14 +34,12 @@ $leftWidth:756px;
 $middleWidth:35px;
 $rightWidth:350px;
 
-$containerEachMarginTop:15px;
-
 $basicBorder:1px solid #dbdbdb;
 
 $smallBtnPadding:5px;
 $smallBtnRadius:0.2rem;
 
-
+$basicBoxBackgroundcolor:#f7f9fa;
 
 
 .fs {
@@ -58,35 +61,59 @@ $smallBtnRadius:0.2rem;
     &-sl {
         font-size: 14px;
         font-weight: 100;
+        color: #555;
+
     }
 
     &-sm {
         font-size: 14px;
         font-weight: 400;
+        color: #555;
+
     }
 
     &-sb {
         font-size: 14px;
         font-weight: 700;
+        color: #222;
+
     }
 
     &-ml {
         font-size: 15px;
         font-weight: 100;
+        color: #555;
     }
 
     &-mm {
         font-size: 15px;
-        font-weight: 300;
+        font-weight: 400;
+        color: #555;
     }
 
     &-mb {
         font-size: 15px;
         font-weight: 700;
+        color: #222;
+
+    }
+
+    &-ll {
+        font-size: 16px;
+        font-weight: 100;
+        color: #555;
+    }
+
+    &-lm {
+        font-size: 16px;
+        font-weight: 400;
+        color: #555;
     }
 
     &-lb {
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 700;
+        color: #222;
     }
+
 }

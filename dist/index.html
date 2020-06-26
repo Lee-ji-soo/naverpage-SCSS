@@ -81,12 +81,50 @@
 
     <div id="container">
         <section id="container-left">
-            <section id="left__ad"> </section>
-            <section id="left__speednews"> </section>
-            <section id="left__newsstand">
-                <div id="newsstand__title"></div>
-                <div id="newsstand__category"></div>
+            <section id="left__ad"></section>
+            <section id="left__speednews">
+                <div class="speed">
+                    <span class="fs-sb company">연합뉴스 〉 </span>
+                    <span class="fs-sm title">코로나 바이러스 국내 확진자 0명 나흘째 유지</span>
+                </div>
+                <ul class="fs-sb category">
+                    <li class="list blue naver">네이버뉴스 ・</li>
+                    <li class="list entertainment">연예</li>
+                    <li class="list sport">스포츠</li>
+                    <li class="list economy">경제</li>
+                </ul>
             </section>
+
+            <section id="left__newsstand">
+                <div id="newsstand__title">
+                    <div class="title">
+                        <div class="newsstand">
+                            <span class="fs-lb">🗒 뉴스스텐드</span>
+                            <span class="fs-mb">〉</span>
+                        </div>
+                        <div class="fs-lm company-category">
+                            <span class="subscribe">구독한 언론사</span>
+                            <span class="fs-lb"> ・ </span>
+                            <span class="active all">전체 언론사</span>
+                        </div>
+                    </div>
+                    <ul class="setting">
+                        <li class="list">
+                            <i class="fas fa-list"></i>
+                        </li>
+                        <li class="active card">
+                            <i class="fas fa-th-large"></i>
+                        </li>
+                        <li class="cog">
+                            <i class="fas fa-cog"></i>
+                        </li>
+                    </ul>
+                </div>
+                <ul id="newsstand__category">
+                    <li class="company">이데일리</li>
+                </ul>
+            </section>
+
             <section id="left__article">
                 <div id="article__title"></div>
                 <div id="article__category"></div>
@@ -105,7 +143,6 @@
             </section>
             <button id="left__morebutton"></button>
         </section>
-
         <section id="container-right">
         </section>
     </div>

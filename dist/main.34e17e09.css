@@ -487,30 +487,47 @@ button:active:target:focus {
 .fs-sl {
   font-size: 14px;
   font-weight: 100;
+  color: #555;
 }
 .fs-sm {
   font-size: 14px;
   font-weight: 400;
+  color: #555;
 }
 .fs-sb {
   font-size: 14px;
   font-weight: 700;
+  color: #222;
 }
 .fs-ml {
   font-size: 15px;
   font-weight: 100;
+  color: #555;
 }
 .fs-mm {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #555;
 }
 .fs-mb {
   font-size: 15px;
   font-weight: 700;
+  color: #222;
+}
+.fs-ll {
+  font-size: 16px;
+  font-weight: 100;
+  color: #555;
+}
+.fs-lm {
+  font-size: 16px;
+  font-weight: 400;
+  color: #555;
 }
 .fs-lb {
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
+  color: #222;
 }
 
 #header__ad--bg {
@@ -643,15 +660,69 @@ button:active:target:focus {
   width: 1130px;
   margin: 0 auto;
 }
-
-#container-left {
+#container #container-left {
   width: 756px;
 }
-#container-left #left__ad {
+#container #container-left #left__ad {
   width: 100%;
   height: 135px;
   background-color: #dbdbdb;
   margin-top: 20px;
+}
+#container #container-left #left__speednews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-top: 15px;
+  background-color: #f7f9fa;
+  border: 1px solid #dbdbdb;
+}
+#container #container-left #left__speednews .speed {
+  margin: 0 20px;
+}
+#container #container-left #left__speednews .category {
+  display: flex;
+  margin: 0 20px;
+}
+#container #container-left #left__speednews .category .list {
+  margin: 0 7px;
+}
+#container #container-left #left__speednews .category .naver {
+  color: #4C70CC;
+}
+#container #container-left #left__newsstand {
+  position: relative;
+}
+#container #container-left #left__newsstand #newsstand__title {
+  height: 48px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#container #container-left #left__newsstand #newsstand__title .title {
+  display: flex;
+}
+#container #container-left #left__newsstand #newsstand__title .title span {
+  margin: 2px;
+}
+#container #container-left #left__newsstand #newsstand__title .title .company-category {
+  margin-left: 5px;
+}
+#container #container-left #left__newsstand #newsstand__title .title .company-category .active {
+  font-weight: 700;
+  color: #222;
+}
+#container #container-left #left__newsstand #newsstand__title .setting {
+  display: flex;
+  color: #B1B2B1;
+}
+#container #container-left #left__newsstand #newsstand__title .setting li {
+  margin: 0 7px;
+}
+#container #container-left #left__newsstand #newsstand__title .setting .active {
+  color: #4C70CC;
 }
 
 #wrap {

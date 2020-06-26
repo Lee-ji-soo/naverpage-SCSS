@@ -45,8 +45,8 @@ lb= large bold
 
 #### Left side
 
-  - [ ] ad
-  - [ ] speed news
+  - [x] ad
+  - [x] speed news
   - [ ] news stand 
        - title | category 
   - [ ] theme
