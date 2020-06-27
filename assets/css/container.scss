@@ -1,5 +1,3 @@
-@import 'assets/css/variables';
-
 #container {
     $containerAdLoginHeight: 135px;
     $containerSpeednewsCurrencyHeight: 50px;
@@ -95,6 +93,28 @@
                     }
                 }
             }
+
+            #newsstand__category {
+                display: flex;
+                flex-wrap: wrap;
+                border: $basicBorder;
+                border-left: none;
+                border-top: none;
+
+                width: ($leftWidth)-6;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: ($leftWidth)/6-2;
+                    height: 57px;
+                    border: $basicBorder;
+                    border-right: none;
+                    border-bottom: none;
+                }
+            }
+
         }
     }
 }
