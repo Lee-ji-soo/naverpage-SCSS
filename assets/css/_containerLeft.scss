@@ -4,7 +4,8 @@
     $containerEachMarginTop: 15px;
 
     $boxMargin: 0 20px;
-    $textMargin: 0 7px;
+    $iconMargin: 0 7px;
+    $textMargin: 0 4px;
 
     width: $basicW;
     margin: $basicM;
@@ -51,8 +52,6 @@
         }
 
         #left__newsstand {
-            position: relative;
-
             #newsstand__title {
                 height: $basicH;
                 margin-top: $containerEachMarginTop;
@@ -84,8 +83,11 @@
                     color: $fontSuperLight;
 
                     li {
-                        margin: $textMargin;
+                        margin: $iconMargin;
 
+                        &:hover {
+                            color: $fontMid;
+                        }
                     }
 
                     .active {
@@ -101,13 +103,14 @@
                 border-left: none;
                 border-top: none;
 
-                width: ($leftWidth)-6;
+                width: ($leftWidth);
 
                 li {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: ($leftWidth)/6-2;
+                    width: ($leftWidth)/6;
+                    margin-right: -1px;
                     height: 57px;
                     border: $basicBorder;
                     border-right: none;
@@ -115,6 +118,48 @@
                 }
             }
 
+        }
+
+        #left__article {
+            #article__title {
+                display: flex;
+                justify-content: space-between;
+                height: $basicH;
+                margin-top: $containerEachMarginTop;
+                align-items: center;
+
+                .todaysarticle {
+                    span {
+                        margin: $textMargin;
+                    }
+                }
+            }
+
+            .setting {
+                display: flex;
+
+                span:nth-child(3) {
+                    margin: $textMargin;
+                }
+
+                div {
+                    margin: $textMargin;
+                    ;
+                }
+
+                .cog {
+
+                    &:hover {
+                        color: $fontMid;
+                    }
+
+                    span {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
         }
     }
 }

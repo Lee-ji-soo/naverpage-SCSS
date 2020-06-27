@@ -39,6 +39,12 @@ $searchBorder:2px;
 
     .deleteBtn {
         color: $white;
+        font-family: 'Lato', sans-serif;
+
+        span {
+            margin: $textMargin;
+        }
+
     }
 
 }
@@ -98,7 +104,7 @@ $searchBorder:2px;
         color: #333;
 
         &:hover {
-            border-bottom: 1px solid #333;
+            text-decoration: underline;
         }
     }
 

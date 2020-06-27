@@ -21,7 +21,8 @@ $naverGreenX:#fff1c0;
 $naverBlueLight:#4a94e1;
 $naverBlueDeep:#4C70CC;
 $fontSuperLight:#B1B2B1;
-$fontLight:#555;
+$fontLight:#666;
+$fontMid:#444;
 $fontDark:#222;
 
 $whole:100%;
@@ -30,14 +31,18 @@ $basicH:48px;
 $basicW:1130px;
 $basicM: 0 auto;
 
+$boxMargin: 0 20px;
+$iconMargin: 0 7px;
+$textMargin: 0 4px;
+
 $leftWidth:756px;
 $middleWidth:35px;
 $rightWidth:350px;
 
 $basicBorder:1px solid #dbdbdb;
 
-$smallBtnPadding:6px 10px;
-$smallBtnRadius:0.8rem;
+$smallBtnPadding:7px 14px;
+$smallBtnRadius:0.9rem;
 
 $basicBoxBackgroundcolor:#f7f9fa;
 
@@ -59,60 +64,66 @@ $basicBoxBackgroundcolor:#f7f9fa;
     }
 
     &-sl {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 100;
 
     }
 
     &-sm {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 400;
 
     }
 
     &-sb {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 700;
 
     }
 
     &-ml {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 100;
     }
 
     &-mm {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
     }
 
     &-mb {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 700;
 
     }
 
     &-ll {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 100;
     }
 
     &-lm {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
     }
 
     &-lb {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
     }
 
+}
+
+.fc {
     &-dark {
         color: #222;
     }
 
-    &-light {
-        color: #666;
+    &-medium {
+        color: #555;
     }
 
+    &-light {
+        color: #777;
+    }
 }

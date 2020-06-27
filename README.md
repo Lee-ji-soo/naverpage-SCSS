@@ -25,6 +25,8 @@ ml= medium light
 mm= medium medium
 mb= medium bold
 lb= large bold
+
+.fc=fontcolor
 dark= 어둡기
 light= 밝기
 
@@ -50,7 +52,7 @@ light= 밝기
 
   - [x] ad
   - [x] speed news
-  - [ ] news stand 
+  - [x] news stand 
        - title | category 
   - [ ] theme
        - title
