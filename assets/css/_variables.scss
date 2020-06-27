@@ -36,8 +36,8 @@ $rightWidth:350px;
 
 $basicBorder:1px solid #dbdbdb;
 
-$smallBtnPadding:5px;
-$smallBtnRadius:0.2rem;
+$smallBtnPadding:6px 10px;
+$smallBtnRadius:0.8rem;
 
 $basicBoxBackgroundcolor:#f7f9fa;
 
@@ -61,59 +61,58 @@ $basicBoxBackgroundcolor:#f7f9fa;
     &-sl {
         font-size: 14px;
         font-weight: 100;
-        color: #555;
 
     }
 
     &-sm {
         font-size: 14px;
         font-weight: 400;
-        color: #555;
 
     }
 
     &-sb {
         font-size: 14px;
         font-weight: 700;
-        color: #222;
 
     }
 
     &-ml {
         font-size: 15px;
         font-weight: 100;
-        color: #555;
     }
 
     &-mm {
         font-size: 15px;
         font-weight: 400;
-        color: #555;
     }
 
     &-mb {
         font-size: 15px;
         font-weight: 700;
-        color: #222;
 
     }
 
     &-ll {
         font-size: 16px;
         font-weight: 100;
-        color: #555;
     }
 
     &-lm {
         font-size: 16px;
         font-weight: 400;
-        color: #555;
     }
 
     &-lb {
         font-size: 16px;
         font-weight: 700;
+    }
+
+    &-dark {
         color: #222;
+    }
+
+    &-light {
+        color: #666;
     }
 
 }

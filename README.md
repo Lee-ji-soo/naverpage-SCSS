@@ -25,6 +25,9 @@ ml= medium light
 mm= medium medium
 mb= medium bold
 lb= large bold
+dark= 어둡기
+light= 밝기
+
 
 *SCSStip 
 :hover :active 등의 경우 css속성을 자식 스코프에서 &로 설정할 수 있음

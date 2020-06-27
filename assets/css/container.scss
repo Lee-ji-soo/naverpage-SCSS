@@ -1,3 +1,5 @@
+@import 'assets/css/variables';
+
 #container {
     $containerAdLoginHeight: 135px;
     $containerSpeednewsCurrencyHeight: 50px;
@@ -15,7 +17,8 @@
         #left__ad {
             width: $whole;
             height: $containerAdLoginHeight;
-            background-color: #dbdbdb;
+            background: url('../images/content_ad.jpg');
+            background-size: cover;
             margin-top: $containerEachMarginTop+5;
         }
 

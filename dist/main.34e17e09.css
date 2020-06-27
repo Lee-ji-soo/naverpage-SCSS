@@ -666,7 +666,8 @@ button:active:target:focus {
 #container #container-left #left__ad {
   width: 100%;
   height: 135px;
-  background-color: #dbdbdb;
+  background: url("/content_ad.b7b7c2d1.jpg");
+  background-size: cover;
   margin-top: 20px;
 }
 #container #container-left #left__speednews {
