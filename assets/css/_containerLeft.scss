@@ -2,11 +2,6 @@
     $containerAdLoginHeight: 135px;
     $containerSpeednewsCurrencyHeight: 50px;
     $containerEachMarginTop: 15px;
-
-    $boxMargin: 0 20px;
-    $iconMargin: 0 7px;
-    $textMargin: 0 4px;
-
     width: $basicW;
     margin: $basicM;
 
@@ -121,6 +116,8 @@
         }
 
         #left__article {
+            $selectedColor: #55CCC1;
+
             #article__title {
                 display: flex;
                 justify-content: space-between;
@@ -133,33 +130,142 @@
                         margin: $textMargin;
                     }
                 }
-            }
 
-            .setting {
-                display: flex;
+                .setting {
+                    display: flex;
 
-                span:nth-child(3) {
-                    margin: $textMargin;
-                }
-
-                div {
-                    margin: $textMargin;
-                    ;
-                }
-
-                .cog {
-
-                    &:hover {
-                        color: $fontMid;
+                    span:nth-child(3) {
+                        margin: $textMargin;
                     }
 
-                    span {
+                    div {
+                        margin: $textMargin;
+                        ;
+                    }
+
+                    .cog {
+
                         &:hover {
-                            text-decoration: underline;
+                            color: $fontMid;
+                        }
+
+                        span {
+                            &:hover {
+                                text-decoration: underline;
+                            }
                         }
                     }
                 }
             }
+
+            #article__category {
+                display: flex;
+                height: 42px;
+                border: $basicBorder;
+
+                li {
+                    width: ($leftWidth)/8-1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-right: $basicBorder;
+
+                    &:last-child {
+                        border: none;
+                    }
+
+                    &:hover {
+                        color: $selectedColor;
+                    }
+                }
+
+                .active {
+                    background-color: $selectedColor;
+                    color: $white;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+
+            #article__mainarticle {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 325px;
+
+                margin-top: $containerEachMarginTop+5;
+
+                padding-bottom: $containerEachMarginTop+5;
+
+                border-bottom: $basicBorder;
+
+
+                .txt {
+                    margin-top: $containerEachMarginTop+5;
+
+                    p {
+                        margin-top: ($containerEachMarginTop)-5;
+                        line-height: 90%;
+                    }
+
+                    .type {
+                        color: $selectedColor;
+                    }
+                }
+
+                .mainarticle-big {
+                    width: 366px;
+
+                    .img {
+                        width: 100%;
+                        height: 180px;
+                        background-image: url('../images/mainarticle-big.jpg');
+                        background-size: cover;
+                    }
+                }
+
+                .mainarticle-small {
+                    width: 362px;
+                    margin-left: 25px;
+
+                    .listUL {
+                        display: flex;
+                        flex-direction: column;
+
+                        li {
+                            display: flex;
+                            flex-direction: row;
+                            margin-bottom: $containerEachMarginTop;
+
+                            .img {
+                                width: 98px;
+                                height: 98px;
+                            }
+
+                            .txt {
+                                width: 218px;
+                                margin-top: 0;
+                                margin-left: 18px;
+
+                                p {
+                                    &:first-child {
+                                        margin-top: 4px;
+                                    }
+                                }
+                            }
+
+                        }
+
+
+                    }
+                }
+
+            }
+
+
+
         }
     }
 }
