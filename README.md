@@ -93,7 +93,7 @@ light= 밝기
   - [x] morebutton
 
 #### Right side
-  - [ ] login 
+  - [x] login 
   - [ ] currency
   - [ ] ad
   - [ ] shop

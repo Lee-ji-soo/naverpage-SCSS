@@ -1,0 +1,41 @@
+#container {
+    $containerAdLoginHeight: 135px;
+    $containerSpeednewsCurrencyHeight: 50px;
+    $containerEachMarginTop: 15px;
+    width: $basicW;
+    margin: $basicM;
+
+    display: flex;
+
+    #container-right {
+        width: $rightWidth;
+        margin-top: $containerEachMarginTop+5;
+        margin-left: $middleWidth;
+
+        #login {
+            height: $containerAdLoginHeight;
+            border: $basicBorder;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: $boxMargin;
+            background-color: $basicBoxBackgroundcolor;
+
+            #login-btn {
+                background-color: $naverGreen1;
+                width: ($rightWidth)-40;
+                height: 50px;
+                border-radius: 3px;
+                color: $white;
+                margin: 12px 0;
+            }
+
+            .others {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
