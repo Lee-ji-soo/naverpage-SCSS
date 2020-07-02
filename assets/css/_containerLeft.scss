@@ -264,35 +264,69 @@
             }
 
             #article__subarticle {
-                #subarticleUL {
+
+                #subarticleUL1,
+                #subarticleUL2 {
                     padding-bottom: $containerEachMarginTop;
                     border-bottom: $basicBorder;
-                }
 
-                .sublist {
-                    margin-top: ($containerEachMarginTop);
-                    display: flex;
-                    align-items: center;
+                    .sublist {
+                        margin-top: ($containerEachMarginTop);
+                        display: flex;
+                        align-items: center;
 
-                    .subimg {
-                        width: 171px;
-                        height: 115px;
+                        .subimg {
+                            width: 171px;
+                            height: 115px;
+                            content: '';
+                            background-position: center;
+                            background-size: 100%;
+                            transition: all .3s ease-in-out;
 
-                        background-position: center;
-                        background-size: 100%;
-                        transition: all .3s ease-in-out;
+                            &:hover {
+                                background-size: 105%;
+                            }
+                        }
 
-                        &:hover {
-                            background-size: 105%;
+                        .txt {
+                            width: 500px;
+                            margin-top: 0;
+                            margin-left: 18px;
                         }
                     }
-
                 }
 
-                .txt {
-                    width: 500px;
-                    margin-top: 0;
-                    margin-left: 18px;
+                #subarticleUL2 {
+                    margin-top: $containerEachMarginTop*2;
+                }
+
+                #subarticleUL1__video,
+                #subarticleUL2__video {
+                    margin-top: $containerEachMarginTop;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    padding-bottom: $containerEachMarginTop;
+                    border-bottom: $basicBorder;
+
+                    .videolist {
+                        width: 30%;
+
+                        .videoimg {
+                            width: 230px;
+                            height: 130px;
+                            transition: all .3s ease-in-out;
+                            background-size: 100%;
+
+                            &:hover {
+                                background-size: 105%;
+                            }
+                        }
+
+                        .videotxt {
+                            margin-top: $containerEachMarginTop;
+                        }
+                    }
                 }
             }
 

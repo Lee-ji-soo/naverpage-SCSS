@@ -12,7 +12,7 @@ for (i = 0; i < newsStandCompanyList.length; i++) {
 }
 
 
-var subArticleList = [{
+var subArticleList1 = [{
     type: '특별한 여행랭킹',
     title: '한국 물가는 충격적 외국인이 보고 깜짝놀란 제품 3',
     intro: '유통 과정이나 환경에 따라 달라지는 물가.그렇기 때문에 국가별로 저렴한 품목과 비싼 품목이 제각기 다를 수 밖에 없는데요.외국인들이 한국 마트에 들렸을 때 가장 충격받는 때는 바로 "제품 가격표를 봤을때...',
@@ -70,7 +70,7 @@ var subArticleList2 = [{
     date: '2일 전',
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_339x222_35347064803472629.png%22&type=nf340_228'
 }];
-var subArticleVideo = [{
+var subArticleVideo1 = [{
     title: '목포? 볼 게 있나? 최근 "야간관광 100선"에 등재된 이유',
     writer: '여행플러스 TOUR PLUS',
     date: '5 일전',
@@ -106,18 +106,21 @@ var subArticleVideo2 = [{
 
 const subarticleUL = document.getElementById('subarticleUL');
 
+
+let listNUM = 1;
+
 function PrintList(subArticleList) {
     var listARR = [];
     for (i = 0; i < subArticleList.length; i++) {
         this.list = subArticleList[i];
-        listARR.push(this.list)
+        listARR.push(this.list);
         this.render = function() {
             for (i = 0; i < subArticleList.length; i++) {
-                document.getElementById('subarticleUL').innerHTML +=
+                document.getElementById(`subarticleUL${listNUM}`).innerHTML +=
                     `<li class='list sublist'>
                 <img class='img subimg'style="background-image:url('${listARR[i].img}')" alt="">
                 <div class='txt subtxt fs-tb'>
-                    <p class='type subtype'>${listARR[i].type}'</p>
+                    <p class='type subtype'>${listARR[i].type}</p>
                     <p class='title subtitle'>${listARR[i].title}</p>
                     <p class='title subintro fs-tm'>${listARR[i].intro}</p>
                     <p class='by subby'>
@@ -127,8 +130,43 @@ function PrintList(subArticleList) {
                 </div>
             </li>`
             }
+            listNUM++;
+
         }
     }
 }
-var printSubArticleList = new PrintList(subArticleList);
-printSubArticleList.render();
+var printSubArticleList1 = new PrintList(subArticleList1);
+var printSubArticleList2 = new PrintList(subArticleList2);
+printSubArticleList1.render();
+printSubArticleList2.render();
+
+let videoNUM = 1;
+
+function PrintVideoList(subArticleVideo) {
+    var listARR = [];
+    for (i = 0; i < subArticleVideo.length; i++) {
+        this.list = subArticleVideo[i];
+        listARR.push(this.list)
+        this.render = function() {
+            for (i = 0; i < subArticleVideo.length; i++) {
+                document.getElementById(`subarticleUL${videoNUM}__video`).innerHTML +=
+                    `<li class="videolist">
+                    <img class="img videoimg" style="background-image:url('${listARR[i].img}')" alt="">
+                    <div class="txt videotxt fs-tb">
+                        <p class='titlevideotitle'>${listARR[i].title}</p>
+                        <p class='by videoby fs-tm'>
+                            <span class='writer videowriter'>${listARR[i].writer}</span>
+                            <span class='date videodate'>${listARR[i].date}</span>
+                        </p>
+                    </div>
+                </li>`
+            }
+            videoNUM++;
+        }
+    }
+}
+
+var printSubArticelVideo1 = new PrintVideoList(subArticleVideo1);
+var printSubArticelVideo2 = new PrintVideoList(subArticleVideo2);
+printSubArticelVideo1.render();
+printSubArticelVideo2.render();
