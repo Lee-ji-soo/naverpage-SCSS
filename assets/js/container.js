@@ -153,7 +153,7 @@ function PrintVideoList(subArticleVideo) {
                     `<li class="videolist">
                     <img class="img videoimg" style="background-image:url('${listARR[i].img}')" alt="">
                     <div class="txt videotxt fs-tb">
-                        <p class='titlevideotitle'>${listARR[i].title}</p>
+                        <p class='title videotitle'>${listARR[i].title}</p>
                         <p class='by videoby fs-tm'>
                             <span class='writer videowriter'>${listARR[i].writer}</span>
                             <span class='date videodate'>${listARR[i].date}</span>

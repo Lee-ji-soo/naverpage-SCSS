@@ -83,14 +83,14 @@ light= 밝기
   - [x] speed news
   - [x] news stand 
        - title | category 
-  - [ ] theme
+  - [x] theme
        - title
        - category
        - main article
          - main article big | main article small
        - sub article
            - sub article-text | sub article-video x 2
-  - [ ] morebutton
+  - [x] morebutton
 
 #### Right side
   - [ ] login 
