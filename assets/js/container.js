@@ -12,7 +12,7 @@ for (i = 0; i < newsStandCompanyList.length; i++) {
 }
 
 
-const subArticleList = [{
+var subArticleList = [{
     type: '특별한 여행랭킹',
     title: '한국 물가는 충격적 외국인이 보고 깜짝놀란 제품 3',
     intro: '유통 과정이나 환경에 따라 달라지는 물가.그렇기 때문에 국가별로 저렴한 품목과 비싼 품목이 제각기 다를 수 밖에 없는데요.외국인들이 한국 마트에 들렸을 때 가장 충격받는 때는 바로 "제품 가격표를 봤을때...',
@@ -40,55 +40,95 @@ const subArticleList = [{
     writer: '트래블뷰',
     date: '1주일 전',
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0626%2FcropImg_339x222_35072919623516630.jpeg%22&type=nf340_228'
+}]
+var subArticleList2 = [{
+    type: '더위탈출 몸보신',
+    title: '요즘 대세 애플망고빙수 호텔가 BEST 8 어디일까?',
+    intro: '호텔 망빙 대격돌, 어떤 빙수 먹을래? 망고 빙수 맛집으로 소문난 호텔 8곳을 전격 비교 분석했다. 망빙 도장 깨기 한번 해 보실래요?▼클릭▼ 호텔 망빙 대격돌, 어떤 빙수 먹을래? | 코스모폴리탄 코리아 ...',
+    writer: '코스모폴리탄',
+    date: '1주일 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_339x222_35357922893333405.jpeg%22&type=nf340_228'
+}, {
+    type: '여행+ 핫클릭',
+    title: '기본 5만원? 제주 여행 가장 실망했던 의외의 음식 알아보니',
+    intro: '제주 여행에서 가장 불만사항 1위는 비싼 물가였다. 특히 음식값이 유독 비싸다는 불평이 높았다. 제주관광공사는 얼마전 지난해 제주를 방문한 관광객의 소비실태 및 여행에 대한 평가 등을 조사한 2019년 제...',
+    writer: '꾹트립',
+    date: '2일 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_210x210_35356288233171486.jpeg%22&type=nf340_228'
+}, {
+    type: '서프라이즈',
+    title: '한국 드라마 견제? 여행 예능 홍보하다 분노한 중화권 스타',
+    intro: '전세계 드라마, 영화를 볼 수 있는 넷플릭스. 세계의 인기 컨텐츠 수요를 알아볼 수 있는 척도가 되고 있는데요. 최근 한국의 드라마 붐이 일고있지요. 드라마 더킹, 이태원 클라스, 사랑의 불시착, 사이코지만 괜찮...',
+    writer: '트립로드',
+    date: '어제',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_339x222_35355071596634299.jpeg%22&type=nf340_228'
+}, {
+    type: '대한민국 탐구생활',
+    title: '해외 못 나가니... 예약 전화 폭주한다는 여수 풀빌라',
+    intro: '나만 몰랐어? 동남아 부럽지 않은 여수 풀빌라 5 올여름은 친구, 가족, 연인과 함께 가기 좋은 여수로 떠나자.▼클릭▼ 나만 몰랐어? 동남아 부럽지 않은 여수 풀빌라 5 | 에스콰이어 코리아 (Esquire Korea)...',
+    writer: '에스콰이어 코리아',
+    date: '2일 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_339x222_35347064803472629.png%22&type=nf340_228'
+}];
+var subArticleVideo = [{
+    title: '목포? 볼 게 있나? 최근 "야간관광 100선"에 등재된 이유',
+    writer: '여행플러스 TOUR PLUS',
+    date: '5 일전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0628%2FcropImg_339x222_35249024384314491.jpeg%22&type=nf464_260'
+}, {
+    title: '여름휴가 다들 어디로 가? 제주도만 피하면 되는 이유!?',
+    writer: '여행플러스 TOUR PLUS',
+    date: '4 일전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0626%2FcropImg_339x222_35095211062836885.jpeg%22&type=nf464_260'
+}, {
+    title: '이젠 호캉스말고 옥캉스~ 도심 속 리틀 포레스트로 FLEX',
+    writer: '띠혜',
+    date: '1개월 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0622%2FcropImg_336x206_34746737228346989.jpeg%22&type=nf464_260'
+}];
+
+var subArticleVideo2 = [{
+    title: '무주 사용 설명서, 해외 부럽지 않은 감성 폭발 여행!',
+    writer: '무주산골영화제',
+    date: '2주일 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0627%2FcropImg_336x206_35165532993163700.jpeg%22&type=nf464_260'
+}, {
+    title: '번달번줌?! 여자 둘이서 수영장 갔더니 생긴 ssul',
+    writer: '꼬미교TV',
+    date: '4주일 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0622%2FcropImg_336x206_34746701495626126.jpeg%22&type=nf464_260'
+}, {
+    title: '랜선 해외여행! 대만 타이동 속으로 풀쩍!',
+    writer: '김군의 여행스케치',
+    date: '3개월 전',
+    img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0627%2FcropImg_336x206_35165341301021021.png%22&type=nf464_260'
 }];
 
 const subarticleUL = document.getElementById('subarticleUL');
 
-
-for (i = 0; i < subArticleList.length; i++) {
-    let img = document.createElement('img');
-    let li = document.createElement('li');
-    let div = document.createElement('div');
-
-    let ptype = document.createElement('p');
-    let ptitle = document.createElement('p');
-    let pintro = document.createElement('p');
-    let divby = document.createElement('p');
-
-    let spandate = document.createElement('span');
-    let spanwriter = document.createElement('span');
-
-    let sublist = subarticleUL.appendChild(li);
-
-    let subimg = sublist.appendChild(img);
-
-    let subtxt = sublist.appendChild(div);
-    let subby = subtxt.appendChild(divby);
-
-    let subintro = subtxt.insertBefore(pintro, subby);
-    let subtitle = subtxt.insertBefore(ptitle, subintro);
-    let subtype = subtxt.insertBefore(ptype, subtitle);
-
-    let subdate = subby.appendChild(spandate);
-    let subwriter = subby.insertBefore(spanwriter, subdate);
-
-    subby.appendChild(spanwriter);
-
-    subimg.classList.add('img', 'subimg');
-    subtxt.classList.add('txt', 'subtxt', 'fs-tb');
-    sublist.classList.add('list', 'sublist');
-    subtype.classList.add('type', 'subtype');
-    subtitle.classList.add('title', 'subtitle');
-    subintro.classList.add('title', 'subintro', 'fs-tm');
-    subby.classList.add('by', 'subby');
-    subwriter.classList.add('writer', 'suwriter', 'fs-tm', 'fc-light');
-    subdate.classList.add('date', 'subdate', 'fs-tm', 'fc-light');
-
-    subimg.style.backgroundImage = `url(${subArticleList[i].img})`;
-    subtype.innerHTML = subArticleList[i].type;
-    subtitle.innerHTML = subArticleList[i].title;
-    subintro.innerHTML = subArticleList[i].intro;
-    subdate.innerHTML = `${subArticleList[i].date} ・ `;
-    subwriter.innerHTML = subArticleList[i].writer;
-
+function PrintList(subArticleList) {
+    var listARR = [];
+    for (i = 0; i < subArticleList.length; i++) {
+        this.list = subArticleList[i];
+        listARR.push(this.list)
+        this.render = function() {
+            for (i = 0; i < subArticleList.length; i++) {
+                document.getElementById('subarticleUL').innerHTML +=
+                    `<li class='list sublist'>
+                <img class='img subimg'style="background-image:url('${listARR[i].img}')" alt="">
+                <div class='txt subtxt fs-tb'>
+                    <p class='type subtype'>${listARR[i].type}'</p>
+                    <p class='title subtitle'>${listARR[i].title}</p>
+                    <p class='title subintro fs-tm'>${listARR[i].intro}</p>
+                    <p class='by subby'>
+                        <span class='writer subwriter fs-tm'>${listARR[i].writer} ・ </span>
+                        <span class='date subdate fs-tm'>${listARR[i].date}</span>
+                    </p>
+                </div>
+            </li>`
+            }
+        }
+    }
 }
+var printSubArticleList = new PrintList(subArticleList);
+printSubArticleList.render();
