@@ -131,7 +131,6 @@ function PrintList(subArticleList) {
             </li>`
             }
             listNUM++;
-
         }
     }
 }
