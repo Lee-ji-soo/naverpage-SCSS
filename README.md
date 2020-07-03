@@ -94,7 +94,7 @@ light= 밝기
 
 #### Right side
   - [x] login 
-  - [ ] currency
+  - [x] issue | button(prev,next)
   - [ ] ad
   - [ ] shop
   - [ ] shopnews

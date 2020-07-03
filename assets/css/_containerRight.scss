@@ -4,7 +4,6 @@
     $containerEachMarginTop: 15px;
     width: $basicW;
     margin: $basicM;
-
     display: flex;
 
     #container-right {
@@ -13,12 +12,20 @@
         margin-left: $middleWidth;
 
         #login {
+
             height: $containerAdLoginHeight;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
             border: $basicBorder;
+
+
             display: flex;
+
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+
             padding: $boxMargin;
             background-color: $basicBoxBackgroundcolor;
 
@@ -35,6 +42,45 @@
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
+            }
+        }
+
+        #issue {
+            width: $rightWidth;
+            height: $containerSpeednewsCurrencyHeight;
+            margin-top: $containerEachMarginTop;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: $basicBorder;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: $boxMargin;
+
+            .type {
+                padding: 4px 8px;
+                border: 1px solid #222;
+                border-radius: 12px;
+            }
+
+            .title {
+                margin: $textMargin;
+            }
+
+            .button {
+                .btn {
+                    $buttonsize: 22px;
+                    border: $basicBorder;
+                    width: $buttonsize;
+                    height: $buttonsize;
+                    float: left;
+                    font-size: 11px;
+
+                    &:first-child {
+                        border-right: none;
+                    }
+                }
             }
         }
     }
