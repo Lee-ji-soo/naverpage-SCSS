@@ -95,9 +95,17 @@ light= 밝기
 #### Right side
   - [x] login 
   - [x] issue | button(prev,next)
-  - [ ] ad
+  - [x] ad
   - [ ] shop
-  - [ ] shopnews
+      - menu 
+        - title | category 
+      - contents
+        - top
+          - company name | pagenation | button 
+        - middle
+          - (image,text) * 3 
+        - bottom
+          - sale | sale content | button >
 
 ## 3. Footer 
 

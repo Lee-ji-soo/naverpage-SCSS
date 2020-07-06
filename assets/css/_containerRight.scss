@@ -12,13 +12,11 @@
         margin-left: $middleWidth;
 
         #login {
-
             height: $containerAdLoginHeight;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             border: $basicBorder;
-
 
             display: flex;
 
@@ -45,40 +43,134 @@
             }
         }
 
-        #issue {
-            width: $rightWidth;
+        .button {
+            .btn {
+                $buttonsize: 22px;
+                border: $basicBorder;
+                width: $buttonsize;
+                height: $buttonsize;
+                float: left;
+                font-size: 11px;
+
+                &:first-child {
+                    border-right: none;
+                }
+            }
+        }
+
+        #right__issue {
             height: $containerSpeednewsCurrencyHeight;
             margin-top: $containerEachMarginTop;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
             border: $basicBorder;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            padding: $boxMargin;
 
-            .type {
-                padding: 4px 8px;
-                border: 1px solid #222;
-                border-radius: 12px;
+            .issuewrap {
+                width: $rightWidth;
+                padding: $boxMargin;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .type {
+                    padding: 4px 8px;
+                    border: 1px solid #222;
+                    border-radius: 12px;
+                }
+
+                .title {
+                    margin: $textMargin;
+                }
             }
 
-            .title {
-                margin: $textMargin;
+        }
+
+        #right__ad {
+            width: $rightWidth;
+            height: 200px;
+            background: url('https://ssl.pstatic.net/tveta/libs/1285/1285255/c9538667dd11eae845e6_20200529151515076_2.jpg');
+            background-size: 100%;
+            border: $basicBorder;
+            margin-top: $containerEachMarginTop;
+        }
+
+        #right__shop {
+            margin-top: $containerEachMarginTop+10;
+
+            #shop__tab {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .tab__category {
+                    .active {
+                        color: $naverGreen1;
+                        border-bottom: 2px solid $naverGreen1;
+                    }
+
+                    span {
+                        margin: $textMargin;
+                    }
+                }
             }
 
-            .button {
-                .btn {
-                    $buttonsize: 22px;
-                    border: $basicBorder;
-                    width: $buttonsize;
-                    height: $buttonsize;
-                    float: left;
-                    font-size: 11px;
+            #shop__content {
+                height: 477px;
+                border: $basicBorder;
+                margin-top: $containerEachMarginTop;
 
-                    &:first-child {
-                        border-right: none;
+                .shop__contentwrap {
+                    padding: $boxMargin;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+
+
+                    .top {
+                        margin-top: $containerEachMarginTop;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .page {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .pagination {
+                            float: left;
+
+                        }
+
+                        .button {
+                            margin-left: 10px;
+
+                            i {
+                                color: $fontSuperLight;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        height: $basicH;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: #F4F7F9;
+                        padding: $boxMargin;
+
+                        .saletxt {
+                            .title {
+                                color: #fc4b41;
+                            }
+
+                            .content {
+                                margin-left: 5px;
+                            }
+                        }
                     }
                 }
             }

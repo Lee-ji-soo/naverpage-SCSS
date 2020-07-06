@@ -169,3 +169,56 @@ var printSubArticelVideo1 = new PrintVideoList(subArticleVideo1);
 var printSubArticelVideo2 = new PrintVideoList(subArticleVideo2);
 printSubArticelVideo1.render();
 printSubArticelVideo2.render();
+
+
+const shopList1 = [{
+    img: 'https://s.pstatic.net/shopping.phinf/20200703_8/61f7a544-cd9c-4ad8-87f0-11520d0e41a0.jpg',
+    alt: '직장인 필수템! 44% 파격 세일!'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200703_0/22ad8104-5ebf-43ab-b582-ee2d127a8e60.jpg',
+    alt: '다이어터 식단! 오늘만 10+10 !'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200703_12/9a12a051-4c4c-441e-a550-7f3ee58f4b7d.jpg',
+    alt: '너무 맛있는데~ 살찔 걱정 없어?'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200703_12/a55eaac0-208d-4c4d-8884-a5603800106b.jpg',
+    alt: '밥하기 싫을 때 꺼내 먹어요~!'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200703_8/f3c9798e-0b72-4671-b0aa-8c40ebe1dc4b.jpg',
+    alt: '다이어터 PICK 최대 65% ↓'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200703_25/8af1c433-c630-4252-ad61-677d99a1aecb.jpg',
+    alt: '꼬르륵 OUT! 배고플땐 이거!'
+}]
+const shopList2 = [{
+    img: 'https://s.pstatic.net/shopping.phinf/20200629_24/8e8eee8c-3a3c-4162-9784-dc26a24e308a.jpg',
+    alt: '명품브랜드 같은 보장하는 퀄리티'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200629_0/f51c8d54-e7ab-4de9-a3b9-397cbdcdf877.jpg',
+    alt: '하나를 입어도 좋은거 입어요'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200522_13/b4b44ce5-c615-4f8b-8297-f3ef4e1e6f0a.jpg',
+    alt: '이유있는 자부심 남들과는 다르게'
+}]
+
+const shopList3 = [{
+    img: 'https://s.pstatic.net/shopping.phinf/20191025_17/597fa97b-bb90-4d0a-944a-a95e8dc4c57a.jpg',
+    alt: '가성비 갑 of 갑! BEST콤비블라인드'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20191025_28/646d1ef3-f439-4e7a-acbc-ba2910b093d8.jpg',
+    alt: '고급오동나무감성 원목우드블라인드'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200116_11/871875a0-d756-4fe1-ac74-4b3c0d0b762e.jpg',
+    alt: '하늘하늘 데일리 맞춤 시폰커튼~'
+}]
+
+const shopList4 = [{
+    img: 'https://s.pstatic.net/shopping.phinf/20200702_5/29fa3529-aa15-42b2-b918-ab446efb4e68.jpg',
+    alt: '더틸버리 BEST 55%+10%쿠폰할인'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200702_24/40927bc7-8659-4c6f-bed6-6c605bce2386.jpg',
+    alt: '로잔 여름신상 지금만 2만원대!'
+}, {
+    img: 'https://s.pstatic.net/shopping.phinf/20200702_14/f560b537-d481-4429-a6aa-7d9ffc13131b.jpg',
+    alt: '리스트 인기폭발 61%+15%추가쿠폰'
+}]
