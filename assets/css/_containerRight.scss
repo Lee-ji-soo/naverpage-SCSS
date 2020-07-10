@@ -172,19 +172,13 @@
                                 margin-top: $containerEachMarginTop;
                                 margin-bottom: 15px;
 
-                                &:hover .shopimg {
-                                    background-size: 105%;
-                                }
-
                                 &:hover .shoptxt {
                                     text-decoration: underline;
                                 }
 
                                 .shopimg {
-                                    background-size: 100%;
                                     width: $shopthumbsize;
                                     height: $shopthumbsize;
-                                    transition: all ease-in-out .2s;
                                 }
 
                                 .shoptxt {

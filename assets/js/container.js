@@ -257,8 +257,8 @@ function PrintShop(shopList, htmlClass) {
         document.querySelector(htmlClass).innerHTML =
             this.shoplist.map(each =>
                 `<li class="shopthumb">
-                <img class='shopimg' style='background-image:url(${each.img}' alt="">
-                    <p class="shoptxt fs-sm">
+                <img class='shopimg img' style='background-image:url(${each.img}' alt="">
+                    <p class="shoptxt txt fs-sm">
                     <span>${each.txt1}</span><br>
                     <span>${each.txt2}</span></p>
                 </li>`).join('');
