@@ -118,19 +118,22 @@
             }
 
             #shop__content {
-                height: 477px;
-                border: $basicBorder;
+                $shopboxPadding: 15px 10px;
                 margin-top: $containerEachMarginTop;
+                border: $basicBorder;
 
                 .shop__contentwrap {
-                    padding: $boxMargin;
+                    padding: $shopboxPadding;
                     box-sizing: border-box;
                     -moz-box-sizing: border-box;
                     -webkit-box-sizing: border-box;
 
+                    &:first-child {
+                        border-bottom: $basicBorder;
+                        height: 477px;
+                    }
 
                     .top {
-                        margin-top: $containerEachMarginTop;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
@@ -150,6 +153,47 @@
 
                             i {
                                 color: $fontSuperLight;
+                            }
+                        }
+                    }
+
+                    @for $i from 1 through 4 {
+                        .middle#{$i} {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+
+
+                            .shopthumb {
+                                $shopthumbsize: 107px;
+                                width: $shopthumbsize;
+                                height: 158px;
+                                margin: 0 1px;
+                                margin-top: $containerEachMarginTop;
+                                margin-bottom: 15px;
+
+                                &:hover .shopimg {
+                                    background-size: 105%;
+                                }
+
+                                &:hover .shoptxt {
+                                    text-decoration: underline;
+                                }
+
+                                .shopimg {
+                                    background-size: 100%;
+                                    width: $shopthumbsize;
+                                    height: $shopthumbsize;
+                                    transition: all ease-in-out .2s;
+                                }
+
+                                .shoptxt {
+                                    line-height: 18px;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    margin-top: ($containerEachMarginTop)-5;
+                                    width: 95%;
+                                }
                             }
                         }
                     }

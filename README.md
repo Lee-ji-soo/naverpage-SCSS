@@ -96,7 +96,7 @@ light= 밝기
   - [x] login 
   - [x] issue | button(prev,next)
   - [x] ad
-  - [ ] shop
+  - [x] shop
       - menu 
         - title | category 
       - contents
