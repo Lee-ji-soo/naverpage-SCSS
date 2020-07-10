@@ -70,34 +70,34 @@ $searchBorder:2px;
         align-self: center;
     }
 
-    .search input {
-        width: 530px;
-        height: ($headerMidContentHeight)-($searchBorder*2);
-        border: $searchBorder solid $naverGreen1;
-    }
+    .searchwrap {
+        position: relative;
 
-    input[type="text"] {
-        font-size: 22px;
-        color: $naverGreen1;
-        text-align: center;
+        input {
+            position: absolute;
+            left: 0;
+            width: 520px;
+            height: ($headerMidContentHeight)-($searchBorder*2);
+            border: $searchBorder solid $naverGreen1;
+        }
 
-    }
+        input[type="text"] {
+            font-size: 20px;
+            color: $naverGreen1;
+            text-align: center;
 
-    .search .submit {
-        width: $headerMidContentHeight;
-        height: $headerMidContentHeight;
-        background-color: $naverGreen1;
-        color: $white;
-        font-size: 22px;
-        margin-left: -4px;
-    }
+        }
 
-    .etc {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        color: #999;
-        cursor: pointer;
+        .submit {
+            position: absolute;
+            right: $headerMidContentHeight;
+            width: $headerMidContentHeight;
+            height: $headerMidContentHeight;
+            background-color: $naverGreen1;
+            color: $white;
+            font-size: 20px;
+        }
+
     }
 
     .page {
@@ -106,6 +106,14 @@ $searchBorder:2px;
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    .etc {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #999;
+        cursor: pointer;
     }
 
     .junior {
