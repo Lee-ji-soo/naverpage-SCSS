@@ -2,7 +2,7 @@
 @import "containerLeft";
 @import 'reset';
 @import "containerRight";
-@import "footer";
+@import "footerpart";
 
 #wrap {
     margin: 0;
@@ -12,8 +12,10 @@
 }
 
 .img {
+    border: none;
     background-size: 100%;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 
     &:hover {
         background-size: 105%;

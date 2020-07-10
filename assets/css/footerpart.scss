@@ -1,0 +1,156 @@
+#footerwrap {
+    width: 100%;
+    background-color: $basicBoxBackgroundcolor;
+    border-top: $basicBorder;
+}
+
+#footer {
+    width: $basicW;
+    margin: $basicM;
+
+    #footerad {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $containerEachMargin;
+        border-bottom: $basicBorder;
+
+        .adthumb {
+            width: 392px;
+            display: flex;
+            align-items: center;
+            $contentHeight: 87px;
+            box-sizing: border-box;
+
+            .img {
+                width: 160px;
+                height: $contentHeight;
+            }
+
+            .content {
+                height: $contentHeight;
+                padding: 5px 0;
+                box-sizing: border-box;
+                margin-left: $containerEachMarginTop;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                &:hover .adtitle {
+                    text-decoration: underline;
+                }
+
+                .adtype {
+                    color: $naverGreen3;
+                }
+
+                .adtxt {
+                    line-height: 17px;
+                }
+            }
+
+        }
+
+    }
+
+    #notice {
+        height: $basicH;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: $basicBorder;
+
+        .go,
+        .content {
+            margin-left: 7px;
+            color: $fontLight;
+        }
+    }
+
+    #partner {
+        display: flex;
+        border-bottom: $basicBorder;
+
+        .partner-wrap {
+            padding: $containerEachMargin;
+            width: 70%;
+
+            .partner__each {
+                display: flex;
+                margin-bottom: ($containerEachMarginTop)-3;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                .partner__type {
+                    width: 92px;
+                }
+
+                .partner__name {
+                    display: flex;
+                    margin: $boxMargin;
+
+                    .names {
+                        padding: 0 10px;
+                        border-right: $basicBorder;
+
+                        &:last-child {
+                            border: none;
+                        }
+
+                        &:first-child {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .servicebox-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .servicebox {
+                display: flex;
+                margin-left: 30px;
+
+                .txt {
+                    line-height: 20px;
+
+                }
+
+                i {
+                    color: $naverGreen3;
+                    font-size: 40px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    #corp {
+        display: flex;
+        padding: $containerEachMargin;
+        padding-bottom: 100px;
+
+        .corp-lists {
+            display: flex;
+
+            .list {
+                border-right: $basicBorder;
+                padding: $iconMargin;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
