@@ -2,9 +2,12 @@
 @import "containerLeft";
 @import 'reset';
 @import "containerRight";
+@import "footer";
 
 #wrap {
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: block;
     min-width: 1190px;
 }
 

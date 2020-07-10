@@ -110,6 +110,16 @@ light= 밝기
 ## 3. Footer 
 
   - [ ] ad 
-  - [ ] notic
+    - img | type | title | txt 
+  - [ ] notice
+    - left
+      - title | txt
+    - right
+      - button 
   - [ ] partner
+    - left
+      - type | compnay name
+    - right 
+      - 웨일브라우저 다운받기 | 프로젝트 꽃 
   - [ ] etc
+    - list * 9
