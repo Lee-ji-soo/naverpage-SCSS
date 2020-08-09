@@ -30,7 +30,26 @@
 
             .speed {
                 margin: $boxMargin;
+                display: flex;
+                height: $basicH;
+                padding: 17px 0;
+                box-sizing: border-box;
+                overflow: hidden;
 
+                #speednews_rolling {
+                    position: relative;
+                    height: $basicH;
+                    transition: all 1s ease-in-out;
+
+                    .speednews {
+                        padding: $iconMargin;
+                        height: $basicH;
+
+                        .active {
+                            display: block
+                        }
+                    }
+                }
             }
 
             .category {

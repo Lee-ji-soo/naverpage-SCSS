@@ -1,3 +1,32 @@
+const speedNews = [{
+        num: 1,
+        content: '코로나 바이러스 국내 확진자 0명 나흘째 유지'
+    },
+    {
+        num: 2,
+        content: '부동산 대책은 대책없이.. 여당 지지율 5% 하락',
+    },
+    {
+        num: 3,
+        content: '트럼프 대통령 "틱톡","텐센트"등 중국 아이티 기업 보이콧 선언'
+    }
+]
+
+function printSpeedNews() {
+
+    this.render = () => {
+        document.getElementById('speednews_rolling').innerHTML = speedNews
+            .map(news =>
+                `<li class="speednews">${news.content}</li>`
+            )
+            .join('')
+    }
+
+    this.render()
+}
+
+const printSpeedNewsFn = new printSpeedNews
+
 const newsStandCompanyList = [
     'KBS', '시사IN', '전자신문', 'Net Korea', 'JIJI.COM', '아시아경제', 'SBS', 'kbs광주방송', 'BUSINESS WATCH',
     '山', '人民网', '프라임경제', '소비자가 만드는 신문', '한국대학신문', 'arirang', '더스쿠프', 'UPI뉴스', '디자인정글', '미주한국일보', '코메디닷컴', 'KNN', '일요신문', '비즈한국', '체널예스'
@@ -13,7 +42,7 @@ function printNewsStandCompany() {
     this.render()
 }
 
-const printNewsStand = new printNewsStandCompany;
+const printNewsStandFn = new printNewsStandCompany;
 
 const subArticleList1 = [{
     type: '특별한 여행랭킹',
@@ -131,6 +160,7 @@ function PrintList(subArticleList) {
     }
     this.render();
 }
+
 const printSubArticleList1 = new PrintList(subArticleList1);
 const printSubArticleList2 = new PrintList(subArticleList2);
 
