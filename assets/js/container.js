@@ -3,16 +3,19 @@ const newsStandCompanyList = [
     '山', '人民网', '프라임경제', '소비자가 만드는 신문', '한국대학신문', 'arirang', '더스쿠프', 'UPI뉴스', '디자인정글', '미주한국일보', '코메디닷컴', 'KNN', '일요신문', '비즈한국', '체널예스'
 ]
 
-const newsStandCategory = document.getElementById('newsstand__category');
-for (i = 0; i < newsStandCompanyList.length; i++) {
-    let companyLI = document.createElement('li');
-    let company = newsStandCategory.appendChild(companyLI);
-    companyLI.classList.add('company', 'fs-tb');
-    company.innerHTML = newsStandCompanyList[i];
+function printNewsStandCompany() {
+    this.render = () => {
+        document.getElementById('newsstand__category').innerHTML = newsStandCompanyList
+            .map(company =>
+                `<li class="company fs-tb">${company}</li>`)
+            .join('');
+    }
+    this.render()
 }
 
+const printNewsStand = new printNewsStandCompany;
 
-var subArticleList1 = [{
+const subArticleList1 = [{
     type: '특별한 여행랭킹',
     title: '한국 물가는 충격적 외국인이 보고 깜짝놀란 제품 3',
     intro: '유통 과정이나 환경에 따라 달라지는 물가.그렇기 때문에 국가별로 저렴한 품목과 비싼 품목이 제각기 다를 수 밖에 없는데요.외국인들이 한국 마트에 들렸을 때 가장 충격받는 때는 바로 "제품 가격표를 봤을때...',
@@ -41,7 +44,7 @@ var subArticleList1 = [{
     date: '1주일 전',
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0626%2FcropImg_339x222_35072919623516630.jpeg%22&type=nf340_228'
 }]
-var subArticleList2 = [{
+const subArticleList2 = [{
     type: '더위탈출 몸보신',
     title: '요즘 대세 애플망고빙수 호텔가 BEST 8 어디일까?',
     intro: '호텔 망빙 대격돌, 어떤 빙수 먹을래? 망고 빙수 맛집으로 소문난 호텔 8곳을 전격 비교 분석했다. 망빙 도장 깨기 한번 해 보실래요?▼클릭▼ 호텔 망빙 대격돌, 어떤 빙수 먹을래? | 코스모폴리탄 코리아 ...',
@@ -70,7 +73,7 @@ var subArticleList2 = [{
     date: '2일 전',
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_339x222_35347064803472629.png%22&type=nf340_228'
 }];
-var subArticleVideo1 = [{
+const subArticleVideo1 = [{
     title: '목포? 볼 게 있나? 최근 "야간관광 100선"에 등재된 이유',
     writer: '여행플러스 TOUR PLUS',
     date: '5 일전',
@@ -86,8 +89,7 @@ var subArticleVideo1 = [{
     date: '1개월 전',
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic1.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0622%2FcropImg_336x206_34746737228346989.jpeg%22&type=nf464_260'
 }];
-
-var subArticleVideo2 = [{
+const subArticleVideo2 = [{
     title: '무주 사용 설명서, 해외 부럽지 않은 감성 폭발 여행!',
     writer: '무주산골영화제',
     date: '2주일 전',
@@ -106,102 +108,84 @@ var subArticleVideo2 = [{
 
 const subarticleUL = document.getElementById('subarticleUL');
 
-
 let listNUM = 1;
 
 function PrintList(subArticleList) {
-    var listARR = [];
-    for (i = 0; i < subArticleList.length; i++) {
-        this.list = subArticleList[i];
-        listARR.push(this.list);
-        this.render = function() {
-            for (i = 0; i < subArticleList.length; i++) {
-                document.getElementById(`subarticleUL${listNUM}`).innerHTML +=
-                    `<li class='list sublist'>
-                <img class='img subimg'style="background-image:url('${listARR[i].img}')" alt="">
-                <div class='txt subtxt fs-tb'>
-                    <p class='type subtype'>${listARR[i].type}</p>
-                    <p class='title subtitle'>${listARR[i].title}</p>
-                    <p class='title subintro fs-tm'>${listARR[i].intro}</p>
-                    <p class='by subby'>
-                        <span class='writer subwriter fs-tm'>${listARR[i].writer} ・ </span>
-                        <span class='date subdate fs-tm'>${listARR[i].date}</span>
-                    </p>
-                </div>
-            </li>`
-            }
-            listNUM++;
-        }
+    this.render = () => {
+        document.getElementById(`subarticleUL${listNUM}`).innerHTML =
+            subArticleList.map(article =>
+                `<li class='list sublist'>
+                 <img class='img subimg'style="background-image:url('${article.img}')" alt="">
+                 <div class='txt subtxt fs-tb'>
+                     <p class='type subtype'>${article.type}</p>
+                     <p class='title subtitle'>${article.title}</p>
+                     <p class='title subintro fs-tm'>${article.intro}</p>
+                     <p class='by subby'>
+                         <span class='writer subwriter fs-tm'>${article.writer} ・ </span>
+                         <span class='date subdate fs-tm'>${article.date}</span>
+                     </p>
+                 </div>
+             </li>`)
+            .join('')
+        listNUM++
     }
+    this.render();
 }
-var printSubArticleList1 = new PrintList(subArticleList1);
-var printSubArticleList2 = new PrintList(subArticleList2);
-printSubArticleList1.render();
-printSubArticleList2.render();
+const printSubArticleList1 = new PrintList(subArticleList1);
+const printSubArticleList2 = new PrintList(subArticleList2);
+
 
 let videoNUM = 1;
 
-function PrintVideoList(subArticleVideo) {
-    var listARR = [];
-    for (i = 0; i < subArticleVideo.length; i++) {
-        this.list = subArticleVideo[i];
-        listARR.push(this.list)
-        this.render = function() {
-            for (i = 0; i < subArticleVideo.length; i++) {
-                document.getElementById(`subarticleUL${videoNUM}__video`).innerHTML +=
-                    `<li class="videolist">
-                    <img class="img videoimg" style="background-image:url('${listARR[i].img}')" alt="">
-                    <div class="txt videotxt fs-tb">
-                        <p class='title videotitle'>${listARR[i].title}</p>
-                        <p class='by videoby fs-tm'>
-                            <span class='writer videowriter'>${listARR[i].writer}</span>
-                            <span class='date videodate'>${listARR[i].date}</span>
-                        </p>
-                    </div>
-                </li>`
-            }
-            videoNUM++;
-        }
+function PrintVideoList(videoList) {
+    this.render = () => {
+        document.getElementById(`subarticleUL${videoNUM}__video`).innerHTML =
+            videoList.map(video => `
+            <li class="videolist">
+                     <img class="img videoimg" style="background-image:url('${video.img}')" alt="">
+                     <div class="txt videotxt fs-tb">
+                         <p class='title videotitle'>${video.title}</p>
+                         <p class='by videoby fs-tm'>
+                             <span class='writer videowriter'>${video.writer}</span>
+                             <span class='date videodate'>${video.date}</span>
+                         </p>
+                     </div>
+                 </li>`)
+            .join('')
+        videoNUM++;
     }
+    this.render();
 }
 
-var printSubArticelVideo1 = new PrintVideoList(subArticleVideo1);
-var printSubArticelVideo2 = new PrintVideoList(subArticleVideo2);
-printSubArticelVideo1.render();
-printSubArticelVideo2.render();
-
+const printSubArticelVideo1 = new PrintVideoList(subArticleVideo1);
+const printSubArticelVideo2 = new PrintVideoList(subArticleVideo2);
 
 const shopList1 = [{
     img: 'https://s.pstatic.net/shopping.phinf/20200703_8/61f7a544-cd9c-4ad8-87f0-11520d0e41a0.jpg',
     txt1: '직장인 필수템!',
     txt2: '44% 파격 세일!'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200703_0/22ad8104-5ebf-43ab-b582-ee2d127a8e60.jpg',
     txt1: '다이어터 식단!',
     txt2: '오늘만 10+10 !'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200703_12/9a12a051-4c4c-441e-a550-7f3ee58f4b7d.jpg',
     txt1: '너무 맛있는데~',
     txt2: '살찔 걱정 없어?'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200703_12/a55eaac0-208d-4c4d-8884-a5603800106b.jpg',
     txt1: '밥하기 싫을 때',
     txt2: '꺼내 먹어요~!'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200703_8/f3c9798e-0b72-4671-b0aa-8c40ebe1dc4b.jpg',
     txt1: '다이어터 PICK',
     txt2: '최대 65% ↓'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200703_25/8af1c433-c630-4252-ad61-677d99a1aecb.jpg',
     txt1: '꼬르륵 OUT!',
     txt2: '배고플땐 이거!'
-
 }]
+
 const shopList2 = [{
     img: 'https://s.pstatic.net/shopping.phinf/20200629_24/8e8eee8c-3a3c-4162-9784-dc26a24e308a.jpg',
     txt1: '명품브랜드 같은',
@@ -210,36 +194,30 @@ const shopList2 = [{
     img: 'https://s.pstatic.net/shopping.phinf/20200629_0/f51c8d54-e7ab-4de9-a3b9-397cbdcdf877.jpg',
     txt1: '하나를 입어도',
     txt2: '좋은거 입어요'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200522_13/b4b44ce5-c615-4f8b-8297-f3ef4e1e6f0a.jpg',
     txt1: '이유있는 자부심',
     txt2: '남들과는 다르게'
-
 }]
 
 const shopList3 = [{
     img: 'https://s.pstatic.net/shopping.phinf/20191025_17/597fa97b-bb90-4d0a-944a-a95e8dc4c57a.jpg',
     txt1: '가성비 갑 of 갑!',
     txt2: 'BEST콤비블라인드'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20191025_28/646d1ef3-f439-4e7a-acbc-ba2910b093d8.jpg',
     txt1: '고급 오동 나무감성',
     txt2: '원목우드 블라인드'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200116_11/871875a0-d756-4fe1-ac74-4b3c0d0b762e.jpg',
     txt1: '하늘하늘 데일리',
     txt2: '맞춤 시폰커튼~'
-
 }]
 
 const shopList4 = [{
     img: 'https://s.pstatic.net/shopping.phinf/20200702_5/29fa3529-aa15-42b2-b918-ab446efb4e68.jpg',
     txt1: '더틸버리 BEST',
     txt2: '55%+10%쿠폰할인'
-
 }, {
     img: 'https://s.pstatic.net/shopping.phinf/20200702_24/40927bc7-8659-4c6f-bed6-6c605bce2386.jpg',
     txt1: '로잔 여름신상',
@@ -250,11 +228,10 @@ const shopList4 = [{
     txt2: '61%+15%추가쿠폰'
 }]
 
-
-function PrintShop(shopList, htmlClass) {
+function PrintShop(shopList, shopHTML) {
     this.shoplist = shopList;
     this.render = function() {
-        document.querySelector(htmlClass).innerHTML =
+        document.querySelector(shopHTML).innerHTML =
             this.shoplist.map(each =>
                 `<li class="shopthumb">
                 <img class='shopimg img' style='background-image:url(${each.img}' alt="">
@@ -264,8 +241,8 @@ function PrintShop(shopList, htmlClass) {
                 </li>`).join('');
     }
     this.render();
-
 }
+
 PrintShop(shopList1, '.middle1');
 PrintShop(shopList2, '.middle2');
 PrintShop(shopList3, '.middle3');
