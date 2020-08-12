@@ -9,11 +9,14 @@ const speedNews = [{
     {
         num: 3,
         content: '트럼프 대통령 "틱톡","텐센트"등 중국 아이티 기업 보이콧 선언'
+    },
+    {
+        num: 4,
+        content: '야당, 여당 수해재난 지역 앞다투어 방문'
     }
 ]
 
 function printSpeedNews() {
-
     this.render = () => {
         document.getElementById('speednews_rolling').innerHTML = speedNews
             .map(news =>
@@ -21,7 +24,6 @@ function printSpeedNews() {
             )
             .join('')
     }
-
     this.render()
 }
 

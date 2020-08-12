@@ -30,24 +30,30 @@
 
             .speed {
                 margin: $boxMargin;
+                width: 60%;
                 display: flex;
                 height: $basicH;
-                padding: 17px 0;
                 box-sizing: border-box;
                 overflow: hidden;
+                position: relative;
+
+                .company {
+                    line-height: $basicH;
+                }
+
+                .rolling {
+                    width: 100%;
+                    position: relative;
+                }
 
                 #speednews_rolling {
-                    position: relative;
-                    height: $basicH;
-                    transition: all 1s ease-in-out;
+                    height: auto;
+                    position: absolute;
+                    transition: all 1s ease;
 
                     .speednews {
+                        line-height: $basicH;
                         padding: $iconMargin;
-                        height: $basicH;
-
-                        .active {
-                            display: block
-                        }
                     }
                 }
             }

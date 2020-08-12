@@ -1,20 +1,21 @@
 const speedNewsUL = document.getElementById('speednews_rolling')
 const speedNewsLI = document.querySelectorAll('.speednews')
-const speedHeight = speedNewsLI[0].offsetHeight;
-const speedNum = speedNewsLI.length;
-const maxHeight = speedHeight * speedNum;
-let speedMove = 0
+const speedHeight = speedNewsLI[0].offsetHeight
 
-function speedRolling() {
-    speedMove += speedHeight;
-    speedNewsUL.style.transform = `translateY(${-speedMove}px)`
-    if (speedMove >= maxHeight) {
-        speedMove = 0
-        speedNewsUL.style.transform = `translateY(${-speedMove}px)`
-    }
+function change() {
+    speedNewsUL.style.top = `${-speedHeight}px`
+    speedNewsUL.animate([{
+        top: '0px'
+    }, {
+        top: `${-speedHeight}px`
+    }], {
+        duration: 600,
+    })
+
+    const firstChild = speedNewsUL.childNodes[0]
+    const cloneChild = firstChild.cloneNode(true)
+    speedNewsUL.removeChild(firstChild);
+    speedNewsUL.appendChild(cloneChild)
 }
 
-speedRollingOff = setInterval(speedRolling, 2000)
-
-const clone = speedNewsLI[0].cloneNode(true)
-speedNewsUL.appendChild(clone)
+changeOff = setInterval(change, 2000)
