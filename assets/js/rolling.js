@@ -2,7 +2,7 @@ const speedNewsUL = document.getElementById('speednews_rolling')
 const speedNewsLI = document.querySelectorAll('.speednews')
 const speedHeight = speedNewsLI[0].offsetHeight
 
-function change() {
+function updownRolling() {
     speedNewsUL.style.top = `${-speedHeight}px`
     speedNewsUL.animate([{
         top: '0px'
@@ -18,4 +18,4 @@ function change() {
     speedNewsUL.appendChild(cloneChild)
 }
 
-changeOff = setInterval(change, 2000)
+updownRollingOff = setInterval(updownRolling, 2000)
