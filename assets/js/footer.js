@@ -38,15 +38,20 @@ const footerCorp = [
 function PrintFooterAd(footerAdList) {
     this.render = function() {
         document.getElementById('footerad').
-        innerHTML = footerAd.map(each => `<div class="adthumb imgwrap">
-                <img alt="${each.title}" class="img" src="${each.img}">
-                <div class="content fs-tb">
-                    <em class="type adtype">${each.type}</em>
-                    <h3 class="title adtitle fs-sb">${each.title}</h3>
-                    <p class="txt adtxt fs-tm">
-                    <span>${each.txt1}</span><br>${each.txt2}<span></span></p>
-                </div>
-            </div>`).join('');
+        innerHTML = footerAd
+            .map(each =>
+                `<div class="adthumb">
+                    <div class="imgwrap">
+                        <img alt="${each.title}" class="img" src="${each.img}">
+                    </div>
+                    <div class="content fs-tb">
+                        <em class="type adtype">${each.type}</em>
+                        <h3 class="title adtitle fs-sb">${each.title}</h3>
+                        <p class="txt adtxt fs-tm">
+                        <span>${each.txt1}</span><br>${each.txt2}<span></span></p>
+                    </div>
+                 </div>`)
+            .join('');
     }
     render();
 }
