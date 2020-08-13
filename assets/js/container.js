@@ -210,14 +210,14 @@ function speedIssues() {
             </li>
             <li class="issue">
                 <span class="type fs-tb">미세</span>
-                <span class="title fs-tb fc-light">미세</span>
-                <span class="fs-tm">😃 좋음</span>
-                <span class="title fs-tb fc-light">초미세</span>
-                <span class="fs-tm">😃 좋음 </span>
+                <span class="title fs-tm fc-light">미세</span>
+                <span class="fs-tm">✨ 좋음</span>
+                <span class="title fs-tm fc-light">| &nbsp;초미세</span>
+                <span class="fs-tm">✨ 좋음 </span>
             </li>
             <li class="issue">
                 <span class="type fs-tb">환율</span>
-                <span class="title fs-sm">🇺🇸 USD</span>
+                <span class="title fs-sm">🇺🇸&nbsp;USD</span>
                 <span class="title fs-sb">1,1830.90</span>
                 <span class="title fs-sm fc-primary"> ▼0.60 -0.05%</span>
             </li>
