@@ -1,3 +1,4 @@
+//Container-left SpeedNews
 const speedNewsUL = document.getElementById('speednews_rolling')
 const speedNewsLI = document.querySelectorAll('.speednews')
 const speedHeight = speedNewsLI[0].offsetHeight
@@ -19,3 +20,30 @@ function updownRolling() {
 }
 
 updownRollingOff = setInterval(updownRolling, 2000)
+
+//Container-right SpeedIssues
+const speedIssueUL = document.getElementById('issue_rolling')
+const speedIssueLI = document.querySelectorAll('.issue')
+const speedWidth = speedIssueLI[0].offsetWidth
+
+
+function rolling() {
+
+    const firstChild = speedIssueUL.childNodes[0]
+    const cloneChild = firstChild.cloneNode(true)
+    speedIssueUL.removeChild(firstChild);
+    speedIssueUL.appendChild(cloneChild);
+
+    if (firstChild.innerHTML) {
+        speedIssueUL.style.left = `${-speedWidth}px`
+        speedIssueUL.animate([{
+            left: '0px'
+        }, {
+            left: `${-speedWidth}px`
+        }], {
+            duration: 300
+        })
+    }
+
+}
+setInterval(rolling, 2500)

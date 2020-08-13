@@ -7,6 +7,7 @@ $searchBorder:2px;
     width: $whole;
     height: $basicH;
     background-color: $naverGreen2;
+    transition: transform 1s ease;
 }
 
 #header__advertisement {

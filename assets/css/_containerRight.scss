@@ -66,14 +66,31 @@
             align-items: center;
 
             .issuewrap {
+                position: relative;
                 width: $rightWidth;
-                padding: $boxMargin;
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                -webkit-box-sizing: border-box;
+                height: $containerSpeednewsCurrencyHeight;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                overflow: hidden;
+
+                #issue_rolling {
+                    position: absolute;
+                    width: $rightWidth*4;
+
+                    .issue {
+                        padding: $boxMargin;
+                        width: ($rightWidth);
+                        float: left;
+                        box-sizing: border-box;
+                    }
+                }
+
+                .button {
+                    position: absolute;
+                    right: 0;
+                    width: 15%;
+
+                }
 
                 .type {
                     padding: 4px 8px;

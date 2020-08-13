@@ -118,6 +118,14 @@ $containerEachMargin: 25px 0;
 }
 
 .fc {
+    &-primary {
+        color: $naverBlueDeep;
+    }
+
+    &-red {
+        color: red;
+    }
+
     &-dark {
         color: #222;
     }

@@ -1,3 +1,4 @@
+//Container-left
 const speedNews = [{
         num: 1,
         content: '코로나 바이러스 국내 확진자 0명 나흘째 유지'
@@ -138,7 +139,6 @@ const subArticleVideo2 = [{
 }];
 
 const subarticleUL = document.getElementById('subarticleUL');
-
 let listNUM = 1;
 
 function PrintList(subArticleList) {
@@ -191,6 +191,41 @@ function PrintVideoList(videoList) {
 
 const printSubArticelVideo1 = new PrintVideoList(subArticleVideo1);
 const printSubArticelVideo2 = new PrintVideoList(subArticleVideo2);
+
+
+//Container-right
+const speedIssuesUL = document.getElementById('issue_rolling')
+
+function speedIssues() {
+    this.render = () => {
+        speedIssuesUL.innerHTML =
+            `<li class="issue">
+                <span class="type fs-tb">이슈</span>
+                <span class="title fs-sm">코로나바이러스감염증19현황</span>
+            </li>
+            <li class="issue">
+                <span class="type fs-tb">증시</span>
+                <span class="title fs-sm">코스닥 859.12</span>
+                <span class="title fs-sm fc-red">▲13.52 +1.60%</span>
+            </li>
+            <li class="issue">
+                <span class="type fs-tb">미세</span>
+                <span class="title fs-tb fc-light">미세</span>
+                <span class="fs-tm">😃 좋음</span>
+                <span class="title fs-tb fc-light">초미세</span>
+                <span class="fs-tm">😃 좋음 </span>
+            </li>
+            <li class="issue">
+                <span class="type fs-tb">환율</span>
+                <span class="title fs-sm">🇺🇸 USD</span>
+                <span class="title fs-sb">1,1830.90</span>
+                <span class="title fs-sm fc-primary"> ▼0.60 -0.05%</span>
+            </li>
+            `
+    }
+    this.render();
+}
+const speedIssueRolling = new speedIssues;
 
 const shopList1 = [{
     img: 'https://s.pstatic.net/shopping.phinf/20200703_8/61f7a544-cd9c-4ad8-87f0-11520d0e41a0.jpg',
