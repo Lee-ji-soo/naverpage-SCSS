@@ -105,7 +105,7 @@ const subArticleList2 = [{
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0629%2FcropImg_339x222_35347064803472629.png%22&type=nf340_228'
 }];
 const subArticleVideo1 = [{
-    title: '목포? 볼 게 있나? 최근 "야간관광 100선"에 등재된 이유',
+    title: '목포? 볼 게 있나? 최근 <야간관광 100선>에 등재된 이유',
     writer: '여행플러스 TOUR PLUS',
     date: '5 일전',
     img: 'https://s.pstatic.net/dthumb.phinf/?src=%22http%3A%2F%2Fstatic2.naver.net%2Fwww%2Fmobile%2Fedit%2F2020%2F0628%2FcropImg_339x222_35249024384314491.jpeg%22&type=nf464_260'
@@ -145,8 +145,8 @@ function PrintList(subArticleList) {
     this.render = () => {
         document.getElementById(`subarticleUL${listNUM}`).innerHTML =
             subArticleList.map(article =>
-                `<li class='list sublist'>
-                 <img class='img subimg'style="background-image:url('${article.img}')" alt="">
+                `<li class='list sublist imgwrap'>
+                 <img class='img subimg'src="${article.img}" alt="${article.title}">
                  <div class='txt subtxt fs-tb'>
                      <p class='type subtype'>${article.type}</p>
                      <p class='title subtitle'>${article.title}</p>
@@ -173,8 +173,8 @@ function PrintVideoList(videoList) {
     this.render = () => {
         document.getElementById(`subarticleUL${videoNUM}__video`).innerHTML =
             videoList.map(video => `
-            <li class="videolist">
-                     <img class="img videoimg" style="background-image:url('${video.img}')" alt="">
+            <li class="videolist imgwrap">
+                     <img class="img videoimg" src="${video.img}" alt="${video.title}">
                      <div class="txt videotxt fs-tb">
                          <p class='title videotitle'>${video.title}</p>
                          <p class='by videoby fs-tm'>
@@ -265,8 +265,8 @@ function PrintShop(shopList, shopHTML) {
     this.render = function() {
         document.querySelector(shopHTML).innerHTML =
             this.shoplist.map(each =>
-                `<li class="shopthumb">
-                <img class='shopimg img' style='background-image:url(${each.img}' alt="">
+                `<li class="shopthumb imgwrap">
+                <img class='shopimg img' src='${each.img}' alt='${each.txt1}'>
                     <p class="shoptxt txt fs-sm">
                     <span>${each.txt1}</span><br>
                     <span>${each.txt2}</span></p>

@@ -11,13 +11,18 @@
     min-width: 1190px;
 }
 
+.imgwrap {
+    overflow: hidden;
+}
+
 .img {
     border: none;
     background-size: 100%;
+    background-position: center;
     transition: all .3s ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background-size: 105%;
+        transform: scale(1.1);
     }
 }
