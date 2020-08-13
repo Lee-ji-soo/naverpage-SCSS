@@ -47,6 +47,41 @@ function printNewsStandCompany() {
 
 const printNewsStandFn = new printNewsStandCompany;
 
+const mainArticleSmall = [{
+    img: 'https://s.pstatic.net/static/www/mobile/edit/2020/0812/cropImg_196x196_39157446399503115.jpeg',
+    type: '여행인 탐구',
+    title: '집순이의 세계여행 세나를 만나다',
+    by: '여행플러스'
+}, {
+    img: 'https://s.pstatic.net/static/www/mobile/edit/2020/0812/cropImg_196x196_39162285297838775.jpeg',
+    type: '여행인 탐구',
+    title: '여행 그 후를 생각하는 여행 작가 임지혜',
+    by: '여행플러스'
+}, {
+    img: 'https://s.pstatic.net/static/www/mobile/edit/2020/0812/cropImg_196x196_39157794377216960.jpeg',
+    type: '여행 + 이슈',
+    title: '몰래 주운 항공권으로 비행기를 타면 일어나는 일',
+    by: '꾹트립'
+}]
+
+function printMainarticleSmall() {
+    this.render = () => {
+        document.getElementById('mainarticle-small-UL').innerHTML =
+            mainArticleSmall
+            .map(li => `<li class="list imgwrap">
+                            <img class="img" src="${li.img}" alt="${li.title}">
+                                <div class="txt">
+                                    <p class="type">${li.type}</p>
+                                    <p class="title">${li.title}</p>
+                                    <p class="by fs-tm">${li.by}</p>
+                                </div>
+                        </li>`)
+            .join('')
+    }
+    this.render()
+}
+const printMainarticleSmallFn = new printMainarticleSmall;
+
 const subArticleList1 = [{
     type: '특별한 여행랭킹',
     title: '한국 물가는 충격적 외국인이 보고 깜짝놀란 제품 3',

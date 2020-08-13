@@ -38,9 +38,8 @@ const footerCorp = [
 function PrintFooterAd(footerAdList) {
     this.render = function() {
         document.getElementById('footerad').
-        innerHTML = footerAd.map(each => `<div class="adthumb">
-                <img alt="" class="img" 
-                style="background-image:url(${each.img})">
+        innerHTML = footerAd.map(each => `<div class="adthumb imgwrap">
+                <img alt="${each.title}" class="img" src="${each.img}">
                 <div class="content fs-tb">
                     <em class="type adtype">${each.type}</em>
                     <h3 class="title adtitle fs-sb">${each.title}</h3>
