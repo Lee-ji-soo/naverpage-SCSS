@@ -241,10 +241,8 @@
                 border-bottom: $basicBorder;
 
                 .mainarticle-big {
-                    width: 366px;
-
-                    .img {
-                        width: 100%;
+                    .imgwrap {
+                        width: 366px;
                         height: 180px;
                     }
                 }
@@ -262,7 +260,7 @@
                             flex-direction: row;
                             margin-bottom: $containerEachMarginTop;
 
-                            .img {
+                            .imgwrap {
                                 width: 98px;
                                 height: 98px;
                             }
@@ -301,10 +299,9 @@
                         display: flex;
                         align-items: center;
 
-                        .subimg {
+                        .imgwrap {
                             width: 171px;
                             height: 115px;
-                            background-position: center;
                         }
 
                         .txt {
@@ -332,7 +329,7 @@
                         width: 30%;
                         cursor: pointer;
 
-                        .videoimg {
+                        .imgwrap {
                             width: 230px;
                             height: 130px;
                         }

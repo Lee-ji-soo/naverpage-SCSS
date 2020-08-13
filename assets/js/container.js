@@ -68,13 +68,15 @@ function printMainarticleSmall() {
     this.render = () => {
         document.getElementById('mainarticle-small-UL').innerHTML =
             mainArticleSmall
-            .map(li => `<li class="list imgwrap">
+            .map(li => `<li class="list">
+                            <div class='imgwrap'>
                             <img class="img" src="${li.img}" alt="${li.title}">
-                                <div class="txt">
-                                    <p class="type">${li.type}</p>
-                                    <p class="title">${li.title}</p>
-                                    <p class="by fs-tm">${li.by}</p>
-                                </div>
+                            </div>
+                            <div class="txt">
+                                <p class="type">${li.type}</p>
+                                <p class="title">${li.title}</p>
+                                <p class="by fs-tm">${li.by}</p>
+                            </div>
                         </li>`)
             .join('')
     }
@@ -180,8 +182,10 @@ function PrintList(subArticleList) {
     this.render = () => {
         document.getElementById(`subarticleUL${listNUM}`).innerHTML =
             subArticleList.map(article =>
-                `<li class='list sublist imgwrap'>
+                `<li class='list sublist'>
+                 <div class='imgwrap'>
                  <img class='img subimg'src="${article.img}" alt="${article.title}">
+                 </div>
                  <div class='txt subtxt fs-tb'>
                      <p class='type subtype'>${article.type}</p>
                      <p class='title subtitle'>${article.title}</p>
@@ -208,8 +212,10 @@ function PrintVideoList(videoList) {
     this.render = () => {
         document.getElementById(`subarticleUL${videoNUM}__video`).innerHTML =
             videoList.map(video => `
-            <li class="videolist imgwrap">
+            <li class="videolist">
+                     <div class="imgwrap">
                      <img class="img videoimg" src="${video.img}" alt="${video.title}">
+                     </div>
                      <div class="txt videotxt fs-tb">
                          <p class='title videotitle'>${video.title}</p>
                          <p class='by videoby fs-tm'>
@@ -335,8 +341,10 @@ function PrintShop(shopList, shopHTML) {
     this.render = function() {
         document.querySelector(shopHTML).innerHTML =
             this.shoplist.map(each =>
-                `<li class="shopthumb imgwrap">
-                <img class='shopimg img' src='${each.img}' alt='${each.txt1}'>
+                `<li class="shopthumb">
+                    <div class="imgwrap">
+                        <img class="shopimg img" src="${each.img}" alt="${each.txt1}">
+                    </div>
                     <p class="shoptxt txt fs-sm">
                     <span>${each.txt1}</span><br>
                     <span>${each.txt2}</span></p>
