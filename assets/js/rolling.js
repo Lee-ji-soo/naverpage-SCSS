@@ -46,7 +46,7 @@ function rollingIssue() {
     }
 }
 
-rollingIssueOff = setInterval(rollingIssue, 2500)
+rollingIssueOff = setInterval(rollingIssue, 5000)
 
 function stopRolling() {
     clearInterval(rollingIssueOff)

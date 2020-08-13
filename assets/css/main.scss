@@ -4,6 +4,10 @@
 @import "containerRight";
 @import "footerpart";
 
+li {
+    cursor: pointer;
+}
+
 #wrap {
     margin: 0;
     padding: 0;

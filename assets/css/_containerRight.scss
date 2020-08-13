@@ -58,6 +58,12 @@
             }
         }
 
+        .others {
+            div {
+                cursor: pointer;
+            }
+        }
+
         #right__issue {
             height: $containerSpeednewsCurrencyHeight;
             margin-top: $containerEachMarginTop;

@@ -10,6 +10,7 @@
         width: $leftWidth;
 
         #left__ad {
+            cursor: pointer;
             width: $whole;
             height: $containerAdLoginHeight;
             background: url('../images/content_ad.jpg');
@@ -18,7 +19,6 @@
         }
 
         #left__speednews {
-
             display: flex;
             justify-content: space-between;
             align-items: center;
