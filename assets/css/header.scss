@@ -179,7 +179,7 @@ $searchBorder:2px;
                 cursor: pointer;
             }
 
-            #search-filter_popup {
+            .search-filter_popup {
                 width: 600px;
                 height: 430px;
 
@@ -191,9 +191,7 @@ $searchBorder:2px;
                 background-color: #fff;
                 border-radius: 5px;
                 box-shadow: 0px 9px 10px 2px rgba(50, 50, 93, .1);
-
-
-                display: grid;
+                display: none;
                 grid-template-rows:
                     $basicH 335px $basicH;
 
@@ -333,6 +331,11 @@ $searchBorder:2px;
                     border-top: $basicBorder;
                 }
             }
+
+            .displayBlock {
+                display: grid;
+            }
+
         }
 
         .down {

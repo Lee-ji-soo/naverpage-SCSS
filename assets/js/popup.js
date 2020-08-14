@@ -1,3 +1,24 @@
+//modal
+const searchFilterBtn = document.getElementById('search-filter_btn')
+const searchFilterPopup = document.querySelector('.search-filter_popup')
+const searchFilterPopupCloseBtn = document.getElementById('search-filter_popup-closebutton')
+
+function openSearchFilterPopup() {
+    searchFilterPopup.classList.add('displayBlock')
+}
+
+function closeSearchFilterPopup() {
+    searchFilterPopup.classList.remove('displayBlock')
+}
+
+searchFilterBtn.addEventListener('click', openSearchFilterPopup)
+searchFilterPopupCloseBtn.addEventListener('click',
+    closeSearchFilterPopup)
+
+
+//render
+const popupIssueOL = document.getElementById('searchfilter_popup-issues');
+
 const popupIssues = [{
         num: 1,
         title: '악인전'
@@ -39,7 +60,6 @@ const popupIssues = [{
         title: '아쿠아맨'
     },
 ]
-const popupIssueOL = document.getElementById('searchfilter_popup-issues');
 
 function printPopupIssues() {
     popupIssueOL.innerHTML = popupIssues
