@@ -64,7 +64,7 @@ light= 밝기
 :hover :active 등의 경우 css속성을 자식 스코프에서 &로 설정할 수 있음
 ```
 
-### PC
+### HTML
 ## 1. Header 
 
 - [x] Ad
@@ -123,3 +123,28 @@ light= 밝기
       - 웨일브라우저 다운받기 | 프로젝트 꽃 
   - [x] corp
     - list * 9
+
+## 4. Popup
+
+  - [ ] search filter 
+    - [ ] header 
+      - left
+        - title | explain | close button
+    - [ ] main 
+      - left
+        - title | value | age  
+      - right
+        - title | issuelist
+    - [ ] footer 
+      - left
+        - date | DataLab
+
+
+### JS
+
+## 1. Header
+  - [ ] popup | search-filter 
+
+## 2. Container 
+  - [x] rolling | speed news & speed issue
+  - [x] sticky  | container Right 전체

@@ -139,48 +139,84 @@ $searchBorder:2px;
     border-top: $basicBorder;
     border-bottom: $basicBorder;
     box-shadow: 0px 9px 10px -6px rgba(50, 50, 93, .1);
-}
 
-#header__gnb {
-    width: $basicW;
-    margin: $basicM;
-    height: $basicH;
-    display: flex;
-    align-items: center;
-
-    .leftbox {
-        width: $leftWidth;
+    #header__gnb {
+        position: relative;
+        width: $basicW;
+        margin: $basicM;
+        height: $basicH;
         display: flex;
-        justify-content: space-around;
-        margin-right: $middleWidth;
-    }
+        align-items: center;
 
-    li {
-        cursor: pointer;
-    }
+        .leftbox {
+            width: $leftWidth;
+            display: flex;
+            justify-content: space-around;
+            margin-right: $middleWidth;
+        }
 
-    .UL {
-        width: ($leftWidth)/2;
-        height: 15px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .greenUL {
-        color: $naverGreen1;
-    }
-
-    .rightbox {
-        width: $rightWidth;
-        display: flex;
-        justify-content: space-between;
-
-        div {
+        li {
             cursor: pointer;
         }
-    }
 
-    .down {
-        color: #666;
+        .UL {
+            width: ($leftWidth)/2;
+            height: 15px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .greenUL {
+            color: $naverGreen1;
+        }
+
+        .rightbox {
+            width: $rightWidth;
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                cursor: pointer;
+            }
+
+            #search-filter_popup {
+                width: 600px;
+                height: 430px;
+                position: absolute;
+                right: -13px;
+                top: 0;
+                z-index: 99;
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0px 9px 10px 2px rgba(50, 50, 93, .1);
+
+                box-sizing: border-box;
+                padding: $boxMargin;
+
+                display: grid;
+                grid-template-rows:
+                    $headerMidContentHeight 329px $headerMidContentHeight;
+
+                .header {
+                    width: 100%;
+                    height: $headerMidContentHeight;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .main {
+                    display: grid;
+                    grid-template-columns:
+                        290px 270px;
+                    padding-top: $containerEachMarginTop;
+                }
+            }
+
+        }
+
+        .down {
+            color: #666;
+        }
     }
 }

@@ -3,9 +3,9 @@ const rightHeight = containerRight.clientHeight
 
 function containerRightScroll() {
     if (scrollY > rightHeight / 3) {
-        containerRight.classList.add('fixed')
+        containerRight.classList.add('sticky')
     } else {
-        containerRight.classList.remove('fixed')
+        containerRight.classList.remove('sticky')
     }
 }
 
