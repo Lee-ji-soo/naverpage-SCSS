@@ -338,7 +338,7 @@ const shopList4 = [{
 
 function PrintShop(shopList, shopHTML) {
     this.shoplist = shopList;
-    this.render = function() {
+    this.render = () => {
         document.querySelector(shopHTML).innerHTML =
             this.shoplist.map(each =>
                 `<li class="shopthumb">
