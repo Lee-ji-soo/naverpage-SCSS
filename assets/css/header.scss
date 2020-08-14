@@ -196,6 +196,7 @@ $searchBorder:2px;
                 display: grid;
                 grid-template-rows:
                     $headerMidContentHeight 329px $headerMidContentHeight;
+                display: none;
 
                 .header {
                     width: 100%;

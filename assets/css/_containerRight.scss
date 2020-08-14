@@ -124,10 +124,16 @@
         #right__ad {
             width: $rightWidth;
             height: 200px;
-            background: url('https://ssl.pstatic.net/tveta/libs/1285/1285255/c9538667dd11eae845e6_20200529151515076_2.jpg');
-            background-size: 100%;
-            border: $basicBorder;
+
             margin-top: $containerEachMarginTop;
+
+            border: $basicBorder;
+            box-sizing: border-box;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         #right__shop {

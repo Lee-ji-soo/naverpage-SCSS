@@ -10,12 +10,14 @@
         width: $leftWidth;
 
         #left__ad {
-            cursor: pointer;
             width: $whole;
             height: $containerAdLoginHeight;
-            background: url('../images/content_ad.jpg');
-            background-size: cover;
             margin-top: $containerEachMarginTop+5;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         #left__speednews {

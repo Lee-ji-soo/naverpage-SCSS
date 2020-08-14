@@ -4,7 +4,9 @@
 @import "containerRight";
 @import "footerpart";
 
-li {
+li,
+img,
+button {
     cursor: pointer;
 }
 
