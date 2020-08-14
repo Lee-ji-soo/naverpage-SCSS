@@ -209,6 +209,12 @@ $searchBorder:2px;
                     align-items: center;
 
                     border-bottom: $basicBorder;
+
+                    .btn {
+                        &:hover {
+                            color: $naverGreen1;
+                        }
+                    }
                 }
 
                 .main {
