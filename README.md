@@ -126,16 +126,16 @@ light= 밝기
 
 ## 4. Popup
 
-  - [ ] search filter 
-    - [ ] header 
+  - [x] search filter 
+    - [x] header 
       - left
         - title | explain | close button
-    - [ ] main 
+    - [x] main 
       - left
         - title | value | age  
       - right
         - title | issuelist
-    - [ ] footer 
+    - [x] footer 
       - left
         - date | DataLab
 

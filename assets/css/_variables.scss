@@ -33,7 +33,14 @@ $basicW:1130px;
 $basicM: 0 auto;
 
 $boxMargin: 0 20px;
+$boxMarginTopBottom: 20px 0;
+
+
 $iconMargin: 0 7px;
+$iconMarginTop:7px;
+$listPadding:0 0 10px 0;
+
+
 $textMargin: 0 4px;
 
 $leftWidth:756px;
@@ -48,6 +55,7 @@ $smallBtnRadius:0.9rem;
 $basicBoxBackgroundcolor:#f7f9fa;
 $containerEachMarginTop: 15px;
 $containerEachMargin: 25px 0;
+
 
 
 .fs {
@@ -128,6 +136,10 @@ $containerEachMargin: 25px 0;
 
     &-red {
         color: red;
+    }
+
+    &-white {
+        color: #fff;
     }
 
     &-dark {
