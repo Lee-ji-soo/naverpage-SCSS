@@ -191,7 +191,7 @@ $searchBorder:2px;
                 background-color: #fff;
                 border-radius: 5px;
                 box-shadow: 0px 9px 10px 2px rgba(50, 50, 93, .1);
-                display: none;
+                display: grid;
                 grid-template-rows:
                     $basicH 335px $basicH;
 
@@ -239,19 +239,73 @@ $searchBorder:2px;
                                 @each $color in $colors {
                                     $index: index($colors, $color);
 
-                                    li:nth-child(#{$index}) {
+                                    .filter-key:nth-child(#{$index}) {
                                         background-color: #{$color};
+
+                                        .handle {
+                                            border: 1px solid #{$color};
+                                        }
+
+                                        .dot {
+                                            &:hover {
+                                                color:#{$color}
+                                            }
+                                        }
                                     }
                                 }
                             }
 
+                            $sliderHeight:25px;
+
                             .filter-key {
+                                position: relative;
                                 margin-bottom: $iconMarginTop;
-                                padding: $smallBtnPadding;
+                                height: $sliderHeight;
+                                display: flex;
+                                align-items: center;
+                                padding-left: $boxMarginTop;
+                                box-sizing: border-box;
                                 border-radius: 30px;
 
                                 &:last-child {
                                     margin-bottom: 0;
+                                }
+
+                                #results {
+                                    background: none;
+                                    border: none;
+                                    padding: $iconMargin;
+                                }
+
+                                .slider {
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                    width: 50%;
+                                    height: $sliderHeight;
+                                    border-radius: 30px;
+                                    background-color: #efefef;
+
+                                    .range {
+                                        display: flex;
+                                        justify-content: space-evenly;
+                                        align-items: center;
+                                        padding: 8px 0;
+
+                                        .dot {
+                                            font-size: 10px;
+                                            color: #dbdbdb;
+                                        }
+                                    }
+
+                                    .handle {
+                                        position: absolute;
+                                        width: $sliderHeight;
+                                        height: $sliderHeight;
+                                        border-radius: 30px;
+                                        box-sizing: border-box;
+                                        background-color: #fff;
+                                    }
                                 }
                             }
                         }

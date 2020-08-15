@@ -143,7 +143,7 @@ light= 밝기
 ### JS
 
 ## 1. Header
-  - [ ] popup | search-filter 
+  - [x] popup | search-filter 
 
 ## 2. Container 
   - [x] rolling | speed news & speed issue
