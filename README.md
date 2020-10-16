@@ -3,7 +3,7 @@ clone naver width SCSS
 
 ## 간략 스트럭처
 
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/anaverpage-SCSS/master/structure.jpeg)
+ ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure.jpeg)
 
 ## SCSS rule
 ```
