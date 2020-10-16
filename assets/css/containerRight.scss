@@ -1,0 +1,256 @@
+#container {
+    $containerAdLoginHeight: 135px;
+    $containerSpeednewsCurrencyHeight: 50px;
+    $containerEachMarginTop: 15px;
+    width: $basicW;
+    margin: $basicM;
+    display: flex;
+
+    .sticky {
+        align-self: flex-start;
+        position: -webkit-sticky;
+        position: sticky;
+        top: -1100px;
+        padding-bottom: $containerEachMarginTop*2;
+    }
+
+    #container-right {
+        width: $rightWidth;
+        margin-top: $containerEachMarginTop+5;
+        margin-left: $middleWidth;
+
+
+        #login {
+            height: $containerAdLoginHeight;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            border: $basicBorder;
+
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            padding: $boxMargin;
+            background-color: $basicBoxBackgroundcolor;
+
+            #login-btn {
+                background-color: $naverGreen1;
+                width: ($rightWidth)-40;
+                height: 50px;
+                border-radius: 3px;
+                color: $white;
+                margin: 12px 0;
+            }
+
+            .others {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .button {
+            .btn {
+                $buttonsize: 22px;
+                border: $basicBorder;
+                width: $buttonsize;
+                height: $buttonsize;
+                float: left;
+                font-size: 11px;
+
+                &:first-child {
+                    border-right: none;
+                }
+            }
+        }
+
+        .others {
+            div {
+                cursor: pointer;
+            }
+        }
+
+        #right__issue {
+            height: $containerSpeednewsCurrencyHeight;
+            margin-top: $containerEachMarginTop;
+            border: $basicBorder;
+            display: flex;
+            align-items: center;
+
+            #issuewrap {
+                position: relative;
+                width: $rightWidth;
+                height: $containerSpeednewsCurrencyHeight;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+
+                #issue_rolling {
+                    position: absolute;
+                    width: $rightWidth*4;
+                    cursor: pointer;
+
+                    .issue {
+                        padding: $boxMargin;
+                        width: ($rightWidth);
+                        float: left;
+                        box-sizing: border-box;
+                    }
+                }
+
+                .button {
+                    position: absolute;
+                    right: 0;
+                    width: 15%;
+
+                }
+
+                .type {
+                    padding: 4px 8px;
+                    border: 1px solid #222;
+                    border-radius: 12px;
+                }
+
+                .title {
+                    margin: $textMargin;
+                }
+            }
+
+        }
+
+        #right__ad {
+            width: $rightWidth;
+            height: 200px;
+
+            margin-top: $containerEachMarginTop;
+
+            border: $basicBorder;
+            box-sizing: border-box;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #right__shop {
+            margin-top: $containerEachMarginTop+10;
+
+            #shop__tab {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .tab__category {
+                    .active {
+                        color: $naverGreen1;
+                        border-bottom: 2px solid $naverGreen1;
+                    }
+
+                    span {
+                        margin: $textMargin;
+                    }
+                }
+            }
+
+            #shop__content {
+                $shopboxPadding: 15px 10px;
+                margin-top: $containerEachMarginTop;
+                border: $basicBorder;
+
+                .shop__contentwrap {
+                    padding: $shopboxPadding;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;
+
+                    &:first-child {
+                        border-bottom: $basicBorder;
+                        height: 477px;
+                    }
+
+                    .top {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .page {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .pagination {
+                            float: left;
+
+                        }
+
+                        .button {
+                            margin-left: 10px;
+
+                            i {
+                                color: $fontSuperLight;
+                            }
+                        }
+                    }
+
+                    @for $i from 1 through 4 {
+                        .middle#{$i} {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+
+
+                            .shopthumb {
+                                $shopthumbsize: 107px;
+                                width: $shopthumbsize;
+                                height: 158px;
+                                margin: 0 1px;
+                                margin-top: $containerEachMarginTop;
+                                margin-bottom: 15px;
+
+                                &:hover .shoptxt {
+                                    text-decoration: underline;
+                                }
+
+                                .shopimg {
+                                    width: $shopthumbsize;
+                                    height: $shopthumbsize;
+                                }
+
+                                .shoptxt {
+                                    line-height: 18px;
+                                    text-align: center;
+                                    margin: 0 auto;
+                                    margin-top: ($containerEachMarginTop)-5;
+                                    width: 95%;
+                                }
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        height: $basicH;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background-color: #F4F7F9;
+                        padding: $boxMargin;
+
+                        .saletxt {
+                            .title {
+                                color: #fc4b41;
+                            }
+
+                            .content {
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
