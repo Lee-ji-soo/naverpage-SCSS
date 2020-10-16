@@ -64,6 +64,9 @@ light= 밝기
 :hover :active 등의 경우 css속성을 자식 스코프에서 &로 설정할 수 있음
 ```
 
+## 완성 페이지
+ ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/naverGrid.png?raw=true)
+
 ### HTML
 ## 1. Header 
 
@@ -149,6 +152,3 @@ light= 밝기
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
   
-## 결과 페이지
-
-![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/naverGrid.png?raw=true)
