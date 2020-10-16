@@ -7,8 +7,8 @@ SCSS, JS, HTML
 ## 간략 스트럭처
  ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg)
 
-# HTML
-## 1. Header 
+## HTML
+### 1. Header 
 
 - [x] Ad
    - logo | content & downloadBtn | deleteBtn
@@ -18,7 +18,7 @@ SCSS, JS, HTML
   - 7(green) | 9(black) | more(btn) | filter(btn)
 
 
-## 2. Container 
+### 2. Container 
 
 #### Left side
 
@@ -50,7 +50,7 @@ SCSS, JS, HTML
         - bottom
           - sale | sale content | button >
 
-## 3. Footer 
+### 3. Footer 
 
   - [x] ad 
     - img | type | title | txt 
@@ -67,7 +67,7 @@ SCSS, JS, HTML
   - [x] corp
     - list * 9
 
-## 4. Popup
+### 4. Popup
 
   - [x] search filter 
     - [x] header 
@@ -83,12 +83,12 @@ SCSS, JS, HTML
         - date | DataLab
 
 
-# JS
+## JS
 
-## 1. Header
+### 1. Header
   - [x] popup | search-filter 
 
-## 2. Container 
+### 2. Container 
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
   
