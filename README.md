@@ -7,7 +7,7 @@ SCSS, JS, HTML
 ## 간략 스트럭처
  ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg)
 
-### HTML
+# HTML
 ## 1. Header 
 
 - [x] Ad
@@ -83,7 +83,7 @@ SCSS, JS, HTML
         - date | DataLab
 
 
-### JS
+# JS
 
 ## 1. Header
   - [x] popup | search-filter 
@@ -91,6 +91,7 @@ SCSS, JS, HTML
 ## 2. Container 
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
+  
   
 ## 완성 페이지
  ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)
