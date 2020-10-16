@@ -148,3 +148,7 @@ light= 밝기
 ## 2. Container 
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
+  
+## 결과 페이지
+
+![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/naverGrid.png?raw=true)
