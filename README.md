@@ -65,7 +65,7 @@ light= 밝기
 ```
 
 ## 완성 페이지
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/naverGrid.png?raw=true)
+ ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)
 
 ### HTML
 ## 1. Header 
