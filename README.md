@@ -4,6 +4,9 @@ clone naver width SCSS
 ## lang
 SCSS, JS, HTML
 
+## parcel Install
+SCSS
+
 ## 간략 스트럭처
  ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg)
 
