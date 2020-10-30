@@ -94,6 +94,7 @@ SCSS
 ### 2. Container 
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
+  - [x] contets | news, articles 랜딩
   
   
 ## 완성 페이지
