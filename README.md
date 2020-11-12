@@ -10,6 +10,12 @@ SCSS
 ## 간략 스트럭처
  ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg)
 
+## 완성 페이지
+ ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)
+ 
+### 검색 필터 팝업
+ ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/popup.jpg)
+
 ## HTML
 ### 1. Header 
 
@@ -95,14 +101,7 @@ SCSS
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
   - [x] contets | news, articles 랜딩
-  
-  
-## 완성 페이지
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)
  
-### 검색 필터 팝업
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/popup.jpg)
-
 ## SCSS rule
 ```
 1.color
