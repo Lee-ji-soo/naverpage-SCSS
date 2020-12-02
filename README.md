@@ -5,7 +5,14 @@ clone naver width SCSS
 SCSS, JS, HTML
 
 ## 간략 스트럭처
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg)
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg'>
+
+## 완성 페이지
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)'>
+ 
+### 검색 필터 팝업
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid1.gif'>
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid2.gif'>
 
 ## HTML
 ### 1. Header 
@@ -92,12 +99,6 @@ SCSS, JS, HTML
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
   
-  
-## 완성 페이지
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)
- 
-### 검색 필터 팝업
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/popup.jpg)
 
 ## SCSS rule
 ```
