@@ -11,17 +11,13 @@ SCSS
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg'>
 
 ## 완성 페이지
-<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)'>
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg'>
  
-### 검색 필터 팝업
+### 롤링 베너, fixed 베너  
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid1.gif'>
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid2.gif'>
-
-## 완성 페이지
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg)
- 
-### 검색 필터 팝업
- ![alt text](https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/popup.jpg)
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid3.gif'>
+<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid4.gif'>
 
 ## HTML
 ### 1. Header 
