@@ -9,15 +9,26 @@ SCSS
 
 ## 간략 스트럭처
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/structure2.jpeg'>
+<br><br>
 
 ## 완성 페이지
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/naverGrid.jpg'>
- 
-### 롤링 베너, fixed 베너  
+<br><br>
+
+### fixed 베너  
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid1.gif'>
+<br><br>
+
+### hover effect
+<img width='1100' src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid3.gif'>
+<br><br>
+
+### rolling
+<img width='1100' src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid4.gif'>
+<br><br>
+
+### 사용자 맞춤 필터 animation 
 <img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid2.gif'>
-<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid3.gif'>
-<img src='https://raw.githubusercontent.com/Lee-ji-soo/naverpage-SCSS/master/gif/grid4.gif'>
 
 ## HTML
 ### 1. Header 
@@ -103,13 +114,8 @@ SCSS
 ### 2. Container 
   - [x] rolling | speed news & speed issue
   - [x] sticky  | container Right 전체
-<<<<<<< HEAD
-  
-
-=======
   - [x] contets | news, articles 랜딩
  
->>>>>>> 265916d9739185e0753da0f6843cc419683b0ab4
 ## SCSS rule
 ```
 1.color
