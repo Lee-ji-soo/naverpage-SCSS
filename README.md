@@ -1,4 +1,4 @@
-# grid width SCSS
+# grid width SCSS ↓↓↓↓↓↓↓ Please look at the contents below.
 clone naver width SCSS
 
 ## lang
